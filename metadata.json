@@ -1,0 +1,8 @@
+{
+  "name": "HayClima.am",
+  "description": "HayClima.am - Օդորակիչների պրոֆեսիոնալ տեղադրում, խորը քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում Երևանում և ողջ Հայաստանում: 10+ տարվա փորձ, երաշխիք:",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "permissions": []
+}

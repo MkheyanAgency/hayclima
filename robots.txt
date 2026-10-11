@@ -1,14 +1,9 @@
 # Robots.txt for HayClima.am
-# HVAC Air Conditioner Service in Yerevan, Armenia
+# Professional HVAC & Air Conditioner Service in Yerevan, Armenia
 
 User-agent: *
 Allow: /
 
-Disallow: /private/
-Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://haclima.am/sitemap.xml
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
+Sitemap: https://hayclima.am/sitemap.xml

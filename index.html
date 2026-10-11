@@ -2,1860 +2,858 @@
 <html lang="hy" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HayClima.am | Օդորակիչների Սպասարկում, Տեղադրում և Լիցքավորում Երևանում</title>
-
-  <!-- ==========================================================================
-     PRIMARY SEO META TAGS (Որոնողական համակարգերի համար)
-     ========================================================================== -->
-  <meta name="description" content="HayClima.am - Օդորակիչների պրոֆեսիոնալ տեղադրում, խորը քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում Երևանում և ողջ Հայաստանում: 10+ տարվա փորձ, երաշխիք:"/>
-  <meta name="keywords" content="օդորակիչների սպասարկում, օդորակիչների տեղադրում, օդորակիչի մաքրում, ֆրեոնի լիցքավորում, кондиционеры ереван, фреон заправка, ремонт кондиционеров, air conditioner installation armenia, hayclima"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="author" content="Mkheyan Agency"/>
-  <link rel="canonical" href="https://hayclima.am" />
-
-  <!-- ==========================================================================
-     OPEN GRAPH / FACEBOOK / INSTAGRAM METAS (Սոցցանցերում լինկը կիսվելու համար)
-     ========================================================================== -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://hayclima.am"/>
-  <meta property="og:title" content="HayClima.am | Օդորակիչների Պրոֆեսիոնալ Սպասարկում"/>
-  <meta property="og:description" content="Տեղադրում, քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում անմիջապես Ձեր հասցեում՝ երաշխիքով:"/>
-  <meta property="og:image" content="https://hayclima.am/public/download%20(1).jpeg"/>
-
-  <!-- ==========================================================================
-     TWITTER METAS
-     ========================================================================== -->
-  <meta property="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:url" content="https://hayclima.am"/>
-  <meta property="twitter:title" content="HayClima.am | Օդորակիչների Պրոֆեսիոնալ Սպասարկում"/>
-  <meta property="twitter:description" content="Տեղադրում, քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում անմիջապես Ձեր հասցեում՝ երաշխիքով:"/>
-  <meta property="twitter:image" content="https://hayclima.am/public/download%20(1).jpeg"/>
-
-  <!-- ==========================================================================
-     FAVICON & ICONS (Կայքի փոքրիկ լոգոն բրաուզերի թաբի վրա)
-     ========================================================================== -->
-  <link rel="icon" type="image/png" href="public/photo_2026-05-20_13.06.10-removebg-preview.png"/>
-  <link rel="apple-touch-icon" href="public/photo_2026-05-20_13.06.10-removebg-preview.png"/>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <style>
-    /* ==========================================================================
-       1. VARIABLES & THEME MANAGEMENT
-       ========================================================================== */
-    :root {
-      --primary: #0077ff;
-      --primary-dark: #0033cc;
-      --primary-light: #00ccff;
-      --accent: #00ffcc;
-      
-      /* Dark Theme Colors */
-      --dark-bg: #050816;
-      --dark-secondary: #0a0f24;
-      --dark-tertiary: #0f1635;
-      --white: #ffffff;
-      --text-primary: #ffffff;
-      --text-secondary: #a0aec0;
-      
-      /* Active Theme Default (Dark) */
-      --bg: var(--dark-bg);
-      --secondary: var(--dark-secondary);
-      --tertiary: var(--dark-tertiary);
-      --color-text-base: var(--white);
-      --color-text-sub: var(--text-secondary);
-      
-      --gradient: linear-gradient(135deg, #0077ff 0%, #00ccff 100%);
-      --gradient-neon: linear-gradient(135deg, #00ccff 0%, #00ffcc 100%);
-      --shadow: 0 10px 40px rgba(0, 119, 255, 0.3);
-      --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.5);
-      --shadow-glow: 0 0 30px rgba(0, 119, 255, 0.5);
-      
-      --glass: rgba(10, 15, 36, 0.8);
-      --glass-blur: blur(20px);
-      --neon-blue: #00ccff;
-      --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    [data-theme="light"] {
-      --bg: #f8fafc;
-      --secondary: #ffffff;
-      --tertiary: #e2e8f0;
-      --color-text-base: #1a202c;
-      --color-text-sub: #4a5568;
-      --glass: rgba(255, 255, 255, 0.8);
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-    }
-
-    /* ==========================================================================
-       2. RESET & GLOBAL STYLES
-       ========================================================================== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      color: var(--color-text-base);
-      background: var(--bg);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    a, button {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-      background: var(--secondary);
-    }
-    ::-webkit-scrollbar-thumb {
-      background: var(--gradient);
-      border-radius: 10px;
-    }
-
-    /* ==========================================================================
-       3. NAVIGATION (NAVBAR)
-       ========================================================================== */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 10000;
-      background: var(--glass);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border-bottom: 1px solid rgba(0, 119, 255, 0.1);
-      transition: var(--transition);
-    }
-
-    nav .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.5rem 20px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 150px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 0 15px rgba(0, 119, 255, 0.4));
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: var(--color-text-base);
-      text-decoration: none;
-      font-weight: 600;
-      position: relative;
-      padding: 0.5rem 0;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; width: 0; height: 2px;
-      background: var(--gradient-neon);
-      transition: width 0.3s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .nav-links a:hover {
-      color: var(--neon-blue);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-    }
-
-    .call-btn {
-      padding: 0.8rem 1.5rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      background: var(--gradient);
-      color: #ffffff;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .call-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-glow);
-    }
-
-    /* Navbar Controls for Language and Theme */
-    .nav-controls {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-theme-btn {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--color-text-base);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      transition: 0.3s;
-    }
-
-    [data-theme="light"] .nav-theme-btn {
-      background: rgba(0, 0, 0, 0.05);
-      border-color: rgba(0, 0, 0, 0.08);
-    }
-
-    .nav-theme-btn:hover {
-      background: var(--primary);
-      color: white;
-      transform: scale(1.05);
-    }
-
-    /* Hamburger Menu */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 5px;
-    }
-
-    .hamburger span {
-      width: 25px;
-      height: 3px;
-      background: var(--primary);
-      border-radius: 3px;
-      transition: var(--transition);
-    }
-
-    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .hamburger.active span:nth-child(2) { opacity: 0; }
-    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
-
-    /* ==========================================================================
-       4. HERO SECTION
-       ========================================================================== */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 100px;
-      background: linear-gradient(135deg, var(--bg) 0%, var(--secondary) 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-      z-index: 2;
-    }
-
-    .hero-text h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
-      color: var(--color-text-base);
-    }
-
-    .hero-text h1 span {
-      background: var(--gradient-neon);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      color: var(--color-text-sub);
-      margin-bottom: 2.5rem;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .primary-btn, .secondary-btn {
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: var(--transition);
-    }
-
-    .primary-btn {
-      background: var(--gradient);
-      color: #ffffff;
-      box-shadow: var(--shadow);
-    }
-
-    .primary-btn:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .secondary-btn {
-      border: 2px solid var(--primary);
-      color: var(--primary);
-      background: transparent;
-    }
-
-    .secondary-btn:hover {
-      background: var(--primary);
-      color: #ffffff;
-      transform: translateY(-4px);
-    }
-
-    .hero-image {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-
-    .hero-image img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 25px;
-      border: 2px solid rgba(0, 119, 255, 0.2);
-      box-shadow: var(--shadow-dark);
-      animation: float 5s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
-    /* ==========================================================================
-       5. SECTIONS BASE & CARDS (FEATURES & SERVICES)
-       ========================================================================== */
-    section {
-      padding: 6rem 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .section-title h2 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--color-text-base);
-      position: relative;
-      display: inline-block;
-    }
-
-    .section-title h2::after {
-      content: '';
-      position: absolute;
-      bottom: -10px; left: 50%;
-      transform: translateX(-50%);
-      width: 60px; height: 4px;
-      background: var(--gradient-neon);
-      border-radius: 2px;
-    }
-
-    .feature-grid, .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .feature-card, .service-card {
-      background: var(--secondary);
-      padding: 3rem 2rem;
-      border-radius: 20px;
-      text-align: center;
-      border: 1px solid rgba(0, 119, 255, 0.08);
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .feature-card:hover, .service-card:hover {
-      transform: translateY(-10px);
-      border-color: var(--neon-blue);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .feature-icon, .service-icon {
-      width: 70px; height: 70px;
-      background: var(--gradient);
-      color: #ffffff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-      font-size: 1.8rem;
-      box-shadow: 0 10px 20px rgba(0, 119, 255, 0.2);
-    }
-
-    .feature-card h3, .service-card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      color: var(--color-text-base);
-    }
-
-    .feature-card p, .service-card p {
-      color: var(--color-text-sub);
-      font-size: 0.95rem;
-    }
-
-    /* ==========================================================================
-       6. CONTACT SECTION
-       ========================================================================== */
-    .contact-box {
-      background: linear-gradient(135deg, #005ed1, #001f4d);
-      border-radius: 30px;
-      padding: 5rem 2rem;
-      text-align: center;
-      color: #ffffff;
-      box-shadow: var(--shadow-dark);
-      border: 1px solid rgba(0, 170, 255, 0.2);
-    }
-
-    .contact-box h2 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact-box p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-      margin-bottom: 2.5rem;
-    }
-
-    .numbers {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .contact-link {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #ffffff;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: var(--transition);
-    }
-
-    .contact-link:hover {
-      background: #ffffff;
-      color: #005ed1;
-      transform: scale(1.05);
-    }
-
-    /* ==========================================================================
-       ABOUT SECTION PREMIUM STYLES
-       ========================================================================== */
-    .about-section {
-      background: linear-gradient(135deg, var(--secondary) 0%, var(--bg) 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .about-container {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .glass-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--glass);
-      padding: 0.6rem 1.2rem;
-      border-radius: 50px;
-      border: 1px solid rgba(0, 204, 255, 0.3);
-      margin-bottom: 1.5rem;
-    }
-    
-    .glass-badge i {
-      color: var(--accent);
-    }
-
-    .about-text-content h2 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      line-height: 1.3;
-      margin-bottom: 1.5rem;
-      color: var(--color-text-base);
-    }
-
-    .about-lead {
-      font-size: 1.2rem;
-      color: var(--primary-light);
-      margin-bottom: 1.5rem;
-      line-height: 1.7;
-    }
-
-    .about-description {
-      color: var(--color-text-sub);
-      font-size: 1rem;
-      line-height: 1.8;
-      margin-bottom: 2rem;
-    }
-
-    .about-points {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .about-point-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 1.05rem;
-      color: var(--color-text-base);
-    }
-
-    .about-point-item i {
-      color: var(--accent);
-      font-size: 1.2rem;
-      text-shadow: 0 0 10px var(--accent);
-    }
-
-    .about-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .stat-card {
-      background: var(--glass);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      padding: 2.5rem 1.5rem;
-      border-radius: 20px;
-      text-align: center;
-      border: 1px solid rgba(0, 204, 255, 0.15);
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .stat-card:hover {
-      transform: translateY(-5px) perspective(1000px) rotateX(3deg) rotateY(-3deg);
-      border-color: var(--neon-blue);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      background: var(--gradient-neon);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 0.3rem;
-    }
-
-    .stat-label {
-      color: var(--color-text-sub);
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    /* ==========================================================================
-       7. ULTRA PREMIUM FOOTER
-       ========================================================================== */
-    .footer {
-      position: relative;
-      background: #050816;
-      padding: 90px 8% 30px;
-      overflow: hidden;
-      border-top: 1px solid rgba(0, 119, 255, 0.15);
-    }
-
-    [data-theme="light"] .footer {
-      background: #f1f5f9;
-      border-top-color: rgba(0, 119, 255, 0.1);
-    }
-
-    .footer-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 50px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .footer-col h3 {
-      color: var(--color-text-base);
-      margin-bottom: 25px;
-      font-size: 22px;
-    }
-
-    .footer-logo {
-      color: var(--color-text-base);
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-
-    .footer-logo span {
-      color: #00aaff;
-    }
-
-    .footer-text {
-      color: var(--color-text-sub);
-      line-height: 1.8;
-      margin-bottom: 25px;
-    }
-
-    .footer-col ul {
-      list-style: none;
-    }
-
-    .footer-col ul li {
-      margin-bottom: 14px;
-    }
-
-    .footer-col ul li a {
-      text-decoration: none;
-      color: var(--color-text-sub);
-      transition: 0.3s;
-    }
-
-    .footer-col ul li a:hover {
-      color: #00aaff;
-      padding-left: 8px;
-    }
-
-    .footer-socials {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .footer-socials a {
-      padding: 10px 18px;
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      text-decoration: none;
-      color: var(--color-text-base);
-      transition: 0.3s;
-    }
-
-    [data-theme="light"] .footer-socials a {
-      background: rgba(0, 0, 0, 0.03);
-      border-color: rgba(0, 0, 0, 0.08);
-    }
-
-    .footer-socials a:hover {
-      background: #00aaff;
-      color: #ffffff;
-      transform: translateY(-3px);
-    }
-
-    .language-switcher {
-      display: flex;
-      gap: 6px;
-      margin-top: 25px;
-      flex-wrap: wrap;
-    }
-
-    .lang-btn {
-      border: none;
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--color-text-base);
-      padding: 8px 14px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-      font-weight: 600;
-    }
-
-    [data-theme="light"] .lang-btn {
-      background: rgba(0, 0, 0, 0.05);
-    }
-
-    .lang-btn.active {
-      background: var(--primary);
-      color: #ffffff;
-    }
-
-    .theme-toggle {
-      margin-top: 20px;
-      border: none;
-      width: 100%;
-      padding: 14px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #0077ff, #00aaff);
-      color: white;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .theme-toggle:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .footer-bottom {
-      margin-top: 60px;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .footer-bottom p {
-      color: var(--color-text-sub);
-    }
-
-    .footer-blur {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(100px);
-      opacity: 0.15;
-      pointer-events: none;
-    }
-
-    .footer-blur-1 { width: 300px; height: 300px; background: #0077ff; top: -100px; left: -100px; }
-    .footer-blur-2 { width: 260px; height: 260px; background: #00aaff; bottom: -100px; right: -100px; }
-
-    /* ==========================================================================
-       8. RESPONSIVE DESIGN & MEDIA QUERIES
-       ========================================================================== */
-    @media (max-width: 1024px) {
-      .nav-links {
-        gap: 1.2rem;
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HayClima.am | Օդորակիչների Պրոֆեսիոնալ Սպասարկում, Տեղադրում և Լիցքավորում Երևանում</title>
+
+  <!-- SEO Primary Meta Tags -->
+  <meta name="description" content="HayClima.am - Օդորակիչների պրոֆեսիոնալ տեղադրում, խորը քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում Երևանում և ողջ Հայաստանում: 10+ տարվա փորձ, երաշխիք:" />
+  <meta name="keywords" content="օդորակիչների սպասարկում, օդորակիչների տեղադրում, օդորակիչի մաքրում, ֆրեոնի լիցքավորում, кондиционеры ереван, фреон заправка, ремонт кондиционеров, air conditioner installation armenia, hayclima" />
+  <meta name="author" content="Mkheyan Agency" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://hayclima.am/" />
+
+  <!-- Alternate Language Links -->
+  <link rel="alternate" hreflang="hy" href="https://hayclima.am/" />
+  <link rel="alternate" hreflang="en" href="https://hayclima.am/?lang=en" />
+  <link rel="alternate" hreflang="ru" href="https://hayclima.am/?lang=ru" />
+  <link rel="alternate" hreflang="x-default" href="https://hayclima.am/" />
+
+  <!-- Open Graph / Social Cards (Facebook, WhatsApp, Telegram, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HayClima.am" />
+  <meta property="og:url" content="https://hayclima.am/" />
+  <meta property="og:title" content="HayClima.am | Օդորակիչների Պրոֆեսիոնալ Սպասարկում, Տեղադրում և Լիցքավորում Երևանում" />
+  <meta property="og:description" content="Օդորակիչների պրոֆեսիոնալ տեղադրում, խորը քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում Երևանում: 10+ տարվա փորձ, երաշխիք:" />
+  <meta property="og:image" content="https://hayclima.am/public/img/og-brand.jpg" />
+  <meta property="og:image:secure_url" content="https://hayclima.am/public/img/og-brand.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="HayClima.am - Օդորակիչների Պրոֆեսիոնալ Սպասարկում" />
+  <meta property="og:locale" content="hy_AM" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HayClima.am | Օդորակիչների Պրոֆեսիոնալ Սպասարկում" />
+  <meta name="twitter:description" content="Օդորակիչների պրոֆեսիոնալ տեղադրում, քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում Երևանում:" />
+  <meta name="twitter:image" content="https://hayclima.am/public/img/og-brand.jpg" />
+  <meta name="twitter:image:alt" content="HayClima.am Կլիմայական Համակարգեր" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" href="/public/img/logo.png" />
+  <link rel="apple-touch-icon" href="/public/img/logo.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Styles & Font Awesome -->
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Structured Data: HVACBusiness & LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "HayClima.am",
+    "image": "https://hayclima.am/public/photo_2026-05-20_13.06.10-removebg-preview.png",
+    "@id": "https://hayclima.am",
+    "url": "https://hayclima.am",
+    "telephone": "+37441790679",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Yerevan",
+      "addressCountry": "AM"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.1792,
+      "longitude": 44.4991
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": [
+      "https://www.instagram.com/hayclima",
+      "https://www.facebook.com/HayClimaArm",
+      "https://t.me/HayClimaAdmin",
+      "https://www.tiktok.com/@hayclima"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ինչքա՞ն ժամանակում է մոտենում վարպետը և որքա՞ն է տևում տեղադրումը:",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Մեր մասնագետները մոտենում են զանգից հետո 1-2 ժամվա ընթացքում: Ստանդարտ տեղադրումը տևում է մոտավորապես 2-3 ժամ:"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ի՞նչ է ներառում օդորակիչի քիմիական մաքրումը:",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Մաքրումը ներառում է ներքին և արտաքին բլոկների ամբողջական քանդում, շվեդական հակաբակտերիալ նյութերով մշակում, բարձր ճնշման ջրով լվացում և տաք գոլորշիով ախտահանում:"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ինչպե՞ս իմանալ, որ օդորակիչը ֆրեոնի լիցքավորման կարիք ունի:",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Հիմնական նշաններն են՝ օդորակիչը թույլ է հովացնում/տաքացնում, արտաքին փականների վրա սառույց է կապում, կամ ջուր է կաթում ներսում:"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Տրվու՞մ է արդյոք երաշխիք կատարված աշխատանքների համար:",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Այո, միանշանակ: HayClima.am-ը տրամադրում է պաշտոնական երաշխիքային թերթիկ՝ մինչև 1 տարի ժամկետով:"
+        }
       }
-    }
-
-    @media (max-width: 992px) {
-      .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .hero-image {
-        order: -1;
-      }
-      .hero-text h1 {
-        font-size: 2.8rem;
-      }
-      .hero-buttons {
-        justify-content: center;
-      }
-      .about-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .about-text-content h2 {
-        font-size: 2.3rem;
-      }
-    }
-
-    @media (max-width: 885px) {
-      /* Hide regular nav controls on medium screens to prevent overlapping */
-      nav .nav-controls {
-        display: none;
-      }
-      
-      .hamburger {
-        display: flex;
-      }
-
-      .nav-links {
-        position: fixed;
-        top: 70px; right: -100%;
-        width: 290px; height: calc(100vh - 70px);
-        background: var(--secondary);
-        flex-direction: column;
-        padding: 2.5rem 1.5rem;
-        gap: 1.8rem;
-        box-shadow: var(--shadow-dark);
-        border-left: 1px solid rgba(0, 119, 255, 0.1);
-        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        align-items: center;
-        overflow-y: auto;
-      }
-
-      .nav-links.active {
-        right: 0;
-      }
-
-      /* Append controls inside mobile navigation view */
-      .nav-links .mobile-only-controls {
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-        margin-top: 15px;
-        padding-top: 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-      }
-      
-      [data-theme="light"] .nav-links .mobile-only-controls {
-        border-top-color: rgba(0, 0, 0, 0.08);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .footer-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .footer {
-        padding: 60px 5% 30px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .about-stats-grid {
-        grid-template-columns: 1fr;
-      }
-      .about-text-content h2 {
-        font-size: 1.9rem;
-      }
-      .call-btn .btn-text {
-        display: none;
-      }
-      .call-btn {
-        padding: 0.8rem;
-        width: 42px; height: 42px;
-        justify-content: center;
-        border-radius: 50%;
-      }
-    }
-    /* ==========================================================================
-       FAQ SECTION PREMIUM STYLES
-       ========================================================================== */
-    .faq-section {
-      background: linear-gradient(135deg, var(--bg) 0%, var(--secondary) 100%);
-    }
-
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .faq-item {
-      background: var(--secondary);
-      border: 1px solid rgba(0, 119, 255, 0.08);
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .faq-item:hover {
-      border-color: var(--neon-blue);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .faq-question {
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      user-select: none;
-      gap: 15px;
-    }
-
-    .faq-question h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--color-text-base);
-      line-height: 1.4;
-    }
-
-    .faq-icon {
-      width: 35px;
-      height: 35px;
-      background: rgba(0, 119, 255, 0.1);
-      color: var(--primary-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      flex-shrink: 0;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      background: rgba(0, 0, 0, 0.15);
-    }
-
-    [data-theme="light"] .faq-answer {
-      background: rgba(0, 0, 0, 0.02);
-    }
-
-    .faq-answer p {
-      padding: 1.5rem 2rem;
-      color: var(--color-text-sub);
-      font-size: 0.98rem;
-      line-height: 1.7;
-      border-top: 1px solid rgba(0, 119, 255, 0.05);
-    }
-
-    /* Active State for JS Toggle */
-    .faq-item.active .faq-answer {
-      max-height: 300px; /* Բավարար է տեքստի սահուն բացվելու համար */
-    }
-
-    .faq-item.active .faq-icon {
-      transform: rotate(180deg);
-      background: var(--primary);
-      color: #ffffff;
-    }
-    /* ==========================================================================
-       SERVICE IMAGE PREMIUM STYLES
-       ========================================================================== */
-    .service-image {
-      width: 100%;
-      margin-bottom: 1.5rem;
-      border-radius: 16px;
-      overflow: hidden; /* Թույլ չի տալիս, որ նկարը մեծանալիս դուրս գա սահմաններից */
-      position: relative;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(0, 119, 255, 0.15);
-      transition: var(--transition);
-    }
-
-    .service-image img {
-      width: 100%;
-      height: 220px; /* Կարգավորում է բոլոր նկարների բարձրությունը, որ լինեն հավասար */
-      object-fit: cover; /* Նկարը չի ծռվում, այլ ավտոմատ լրացնում է տարածքը */
-      display: block;
-      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    /* Էֆեկտներ, երբ մկնիկը պահվում է քարտի (Service Card) վրա */
-    .service-card:hover .service-image {
-      border-color: var(--neon-blue);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .service-card:hover .service-image img {
-      transform: scale(1.06) rotate(1deg); /* Նկարը սիրուն մեծանում և թեթև թեքվում է */
-    }
-
-    /* Լուսավորության նուրբ էֆեկտ նկարի վրա (Overlay Glow) */
-    .service-image::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: linear-gradient(to bottom, transparent 60%, rgba(5, 8, 22, 0.4));
-      pointer-events: none;
-    }
-    /* ==========================================================================
-       SERVICES SECTION HEADER STYLES (NEW DECORATIONS)
-       ========================================================================== */
-    .section-title {
-      text-align: center;
-      max-width: 700px; /* Սահմանափակում է տեքստի լայնությունը, որ կարդալը հեշտ լինի */
-      margin: 0 auto 4rem; /* Կենտրոնացնում է բլոկը և տարածություն տալիս ներքևի քարտերից */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
-    /* Ֆուտուրիստական Բեյջ Վերնագրի Վերևում */
-    .section-badge {
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 2px; /* Տառերի միջև տարածություն */
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(0, 255, 204, 0.08); /* Նուրբ էկո-կապույտ ֆոն */
-      padding: 6px 16px;
-      border-radius: 50px;
-      border: 1px solid rgba(0, 255, 204, 0.2);
-      display: inline-block;
-      box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
-      margin-bottom: 5px;
-    }
-
-    [data-theme="light"] .section-badge {
-      background: rgba(0, 119, 255, 0.06);
-      color: var(--primary);
-      border-color: rgba(0, 119, 255, 0.15);
-    }
-
-    /* Գլխավոր Վերնագիր */
-    .section-title h2 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      line-height: 1.25;
-      color: var(--color-text-base);
-      position: relative;
-      margin-bottom: 5px;
-    }
-
-    /* Նուրբ Նկարագրություն Վերնագրի Ներքևում */
-    .section-desc {
-      font-size: 1.1rem;
-      color: var(--color-text-sub);
-      line-height: 1.6;
-      max-width: 600px;
-    }
-
-    /* Ադապտիվ տարբերակ հեռախոսների համար */
-    @media (max-width: 768px) {
-      .section-title h2 {
-        font-size: 2rem; /* Հեռախոսի վրա մի քիչ փոքրանում է, որ սիրուն տեղավորվի */
-      }
-      .section-desc {
-        font-size: 0.98rem;
-      }
-      .section-title {
-        margin-bottom: 2.5rem;
-      }
-    }
-  </style>
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="container">
-      <div class="logo">
-        <img src="public/photo_2026-05-20_13.06.10-removebg-preview.png" alt="HayClima Logo">
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="#home" data-i18n="nav_home">Գլխավոր</a></li>
-        <li><a href="#services" data-i18n="nav_services">Ծառայություններ</a></li>
-        <li><a href="#about" data-i18n="nav_about">Մեր մասին</a></li>
-        <li><a href="#contact" data-i18n="nav_contact">Կոնտակտ</a></li>
-        
-        <!-- Mobile Specific Switchers (Appears inside hamburger menu) -->
-        <li class="mobile-only-controls" style="display: none;">
-          <div class="language-switcher">
-            <button class="lang-btn active" onclick="switchLanguage('hy')">🇦🇲 AM</button>
-            <button class="lang-btn" onclick="switchLanguage('en')">🇺🇸 EN</button>
-            <button class="lang-btn" onclick="switchLanguage('ru')">🇷🇺 RU</button>
+  <!-- NAVIGATION HEADER -->
+  <header>
+    <nav>
+      <div class="container nav-container">
+        <a href="/" class="logo-wrapper">
+          <img src="/public/photo_2026-05-20_13.06.10-removebg-preview.png" alt="HayClima Logo" class="logo-img" />
+          <div class="logo-text-block">
+            <span class="logo-title">Hay<span>Clima</span>.am</span>
+            <span class="logo-subtitle" data-i18n="brand_sub">Կլիմայական Համակարգեր</span>
           </div>
-          <button class="nav-theme-btn" onclick="toggleGlobalTheme()" style="width: 100%; border-radius: 10px; gap: 8px; font-size: 0.95rem; font-weight: 600; padding: 10px 20px;">
-            <i class="fas fa-sun"></i> Light Mode
-          </button>
-        </li>
-      </ul>
+        </a>
 
-      <div class="nav-actions">
-        <!-- Desktop Controls -->
-        <div class="nav-controls">
-          <div class="language-switcher" style="margin-top: 0;">
-            <button class="lang-btn active" onclick="switchLanguage('hy')" style="padding: 6px 10px; font-size: 13px;">AM</button>
-            <button class="lang-btn" onclick="switchLanguage('en')" style="padding: 6px 10px; font-size: 13px;">EN</button>
-            <button class="lang-btn" onclick="switchLanguage('ru')" style="padding: 6px 10px; font-size: 13px;">RU</button>
+        <!-- Navigation Links & Accessible Drawer -->
+        <ul class="nav-links" id="primary-nav-links">
+          <li><a href="/" class="active" data-i18n="nav_home">Գլխավոր</a></li>
+          <li><a href="/about" data-i18n="nav_about">Մեր Մասին</a></li>
+          <li><a href="/services" data-i18n="nav_services">Ծառայություններ</a></li>
+          <li><a href="/products" data-i18n="nav_products">Սարքավորումներ</a></li>
+          <li><a href="/projects" data-i18n="nav_projects">Նախագծեր</a></li>
+          <li><a href="/contact" data-i18n="nav_contact">Կապ</a></li>
+          <li class="mobile-only-control">
+            <div class="language-switcher">
+              <button type="button" class="lang-btn active" data-lang="hy">AM</button>
+              <button type="button" class="lang-btn" data-lang="en">EN</button>
+              <button type="button" class="lang-btn" data-lang="ru">RU</button>
+            </div>
+          </li>
+          <li class="mobile-only-control">
+            <button type="button" class="theme-toggle theme-toggle-full">
+              <i class="fas fa-sun"></i> <span>Light Mode</span>
+            </button>
+          </li>
+          <li class="mobile-only-control">
+            <a href="tel:+37441790679" class="btn-mobile-drawer-call">
+              <i class="fas fa-phone-alt"></i>
+              <span data-i18n="btn_call">Զանգահարել</span> (+374 41 790679)
+            </a>
+          </li>
+        </ul>
+
+        <!-- Action Controls -->
+        <div class="nav-actions">
+          <div class="language-switcher nav-controls-desktop">
+            <button type="button" class="lang-btn active" data-lang="hy">AM</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="ru">RU</button>
           </div>
-          <button class="nav-theme-btn" onclick="toggleGlobalTheme()" id="navThemeBtn">
+
+          <button type="button" class="theme-toggle nav-controls-desktop" aria-label="Toggle theme">
             <i class="fas fa-sun"></i>
           </button>
-        </div>
 
-        <a href="tel:+37441790679" class="call-btn">
-          <i class="fas fa-phone"></i>
-          <span class="btn-text" data-i18n="btn_call">Զանգահարել</span>
-        </a>
-
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1 data-i18n="hero_title">Պրոֆեսիոնալ <span>Օդորակիչների</span> Սպասարկում</h1>
-        <p data-i18n="hero_desc">Տեղադրում, մաքրում, ֆրեոնի լիցքավորում և վերանորոգում անմիջապես Ձեր հասցեում։</p>
-        <div class="hero-buttons">
-          <a href="#services" class="primary-btn" data-i18n="hero_btn_services">
-            <i class="fas fa-tools"></i> Մեր ծառայությունները
+          <a href="tel:+37441790679" class="btn-header-call">
+            <i class="fas fa-phone-alt"></i>
+            <span data-i18n="btn_call">Զանգահարել</span>
           </a>
-          <a href="tel:+37441790679" class="secondary-btn">
-            <i class="fas fa-phone"></i> +374 41 790679
+
+          <button type="button" class="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-backdrop"></div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-fade-up">
+          <div class="section-kicker" data-i18n="hero_badge">HVAC Պրոֆեսիոնալ Սպասարկում Երևանում</div>
+          <h1 class="hero-title" data-i18n="hero_title">
+            Պրոֆեսիոնալ <span>Օդորակիչների</span> Սպասարկում և Տեղադրում
+          </h1>
+          <p class="hero-description" data-i18n="hero_desc">
+            Տեղադրում, խորը քիմիական մաքրում, ֆրեոնի լիցքավորում և վերանորոգում անմիջապես Ձեր հասցեում: Մասնագետի մոտեցում 1-2 ժամում, պաշտոնական երաշխիքով:
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="/services" class="btn-primary" data-i18n="hero_btn_services">
+              <i class="fas fa-tools"></i> Մեր Ծառայությունները
+            </a>
+            <a href="tel:+37441790679" class="btn-secondary">
+              <i class="fas fa-phone-alt"></i> +374 41 790679
+            </a>
+          </div>
+
+          <!-- Trust Bar (Clean Zero-Pill) -->
+          <div class="trust-bar">
+            <div class="trust-item">
+              <i class="fas fa-check-circle"></i>
+              <span data-i18n="hero_trust_experience">10+ Տարվա Փորձ</span>
+            </div>
+            <span class="trust-separator">·</span>
+            <div class="trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span data-i18n="hero_trust_warranty">Մինչև 1 Տարի Երաշխիք</span>
+            </div>
+            <span class="trust-separator">·</span>
+            <div class="trust-item">
+              <i class="fas fa-bolt"></i>
+              <span data-i18n="hero_trust_speed">Արագ Մոտեցում (1-2 ժամ)</span>
+            </div>
+            <span class="trust-separator">·</span>
+            <div class="trust-item">
+              <i class="fas fa-leaf"></i>
+              <span data-i18n="hero_trust_eco">Շվեդական Էկո-նյութեր</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Frame with Real HayClima Image -->
+        <div class="hero-visual reveal-scale">
+          <div class="hero-image-card">
+            <img src="/public/WhatsApp Image 2026-05-20 at 17.01.37.jpeg" alt="HayClima Professional Air Conditioner Service" />
+          </div>
+
+          <!-- Floating Engineering Stat Box -->
+          <div class="hero-floating-stat">
+            <div class="stat-inline-item">
+              <div class="stat-inline-num">1-2 ժ</div>
+              <div class="stat-inline-label">Մոտեցում Երևանում</div>
+            </div>
+            <div class="stat-inline-item">
+              <div class="stat-inline-num">100%</div>
+              <div class="stat-inline-label">Երաշխիք Թերթիկով</div>
+            </div>
+            <div class="stat-inline-item">
+              <div class="stat-inline-num">24/7</div>
+              <div class="stat-inline-label">Շտապ Արձագանք</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS SECTION (Verified Statistics) -->
+    <section class="metrics-section">
+      <div class="container metrics-grid">
+        <div class="metric-card reveal-fade-up">
+          <div class="metric-num counter" data-target="4500" data-suffix="+">4,500+</div>
+          <div class="metric-label" data-i18n="stat_clients_label">Գոհ Հաճախորդներ</div>
+        </div>
+        <div class="metric-card reveal-fade-up delay-1">
+          <div class="metric-num counter" data-target="12000" data-suffix="+">12,000+</div>
+          <div class="metric-label" data-i18n="stat_projects_label">Ավարտված Նախագծեր</div>
+        </div>
+        <div class="metric-card reveal-fade-up delay-2">
+          <div class="metric-num">100%</div>
+          <div class="metric-label" data-i18n="stat_guarantee_label">Որակի Երաշխիք</div>
+        </div>
+        <div class="metric-card reveal-fade-up delay-3">
+          <div class="metric-num counter" data-target="25" data-suffix="+">25+</div>
+          <div class="metric-label" data-i18n="stat_regions_label">Սպասարկվող Շրջաններ</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES OVERVIEW -->
+    <section class="section-padding" id="services">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-kicker" data-i18n="services_badge">HVAC ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</div>
+          <h2 class="section-title" data-i18n="services_title">Օդափոխության և Օդորակման Համակարգեր</h2>
+          <p class="section-subtitle" data-i18n="services_desc">
+            Մենք իրականացնում ենք օդափոխության և օդորակման համակարգերի նախագծում, տեղադրում, սպասարկում և վերանորոգում։
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Installation -->
+          <article class="service-card reveal-fade-up">
+            <div class="service-card-media">
+              <img src="/public/WhatsApp Image 2026-05-20 at 17.01.37 (2).jpeg" alt="HayClima AC Installation" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon"><i class="fas fa-fan"></i></div>
+              <h3 class="service-card-title" data-i18n="serv1_title">Տեղադրում և Մոնտաժ</h3>
+              <p class="service-card-desc" data-i18n="serv1_desc">
+                Split և Multi-Split համակարգերի պրոֆեսիոնալ տեղադրում, պղնձե խողովակների վակուումացում և որակյալ ամրացում:
+              </p>
+              <ul class="service-features-list">
+                <li><i class="fas fa-check"></i> <span data-i18n="serv1_feature1">Պատերի ալմաստե հորատում առանց փոշու</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv1_feature2">Պղնձե մայրուղու որակյալ մեկուսացում</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv1_feature3">Խողովակաշարի խորը վակուումացում</span></li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="/services/installation" class="link-arrow">
+                  <span data-i18n="btn_learn_more">Մանրամասն</span> <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="tel:+37441790679" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                  <i class="fas fa-phone-alt"></i> Պատվիրել
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2: Maintenance & Cleaning -->
+          <article class="service-card reveal-fade-up delay-1">
+            <div class="service-card-media">
+              <img src="/public/WhatsApp Image 2026-05-20 at 17.01.37 (3).jpeg" alt="HayClima AC Deep Cleaning" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon"><i class="fas fa-broom"></i></div>
+              <h3 class="service-card-title" data-i18n="serv3_title">Խորը Քիմիական Մաքրում</h3>
+              <p class="service-card-desc" data-i18n="serv3_desc">
+                Ներքին և արտաքին բլոկների ամբողջական քանդում, հատուկ շվեդական հակաբակտերիալ նյութերով և շոգեմաքրմամբ:
+              </p>
+              <ul class="service-features-list">
+                <li><i class="fas fa-check"></i> <span data-i18n="serv3_feature1">Հատուկ հիդրո-պաշտպանիչ պարկերով լվացում</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv3_feature2">Շոգեախտահանում 140°C ջերմաստիճանով</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv3_feature3">Բորբոսի, սնկերի և տհաճ հոտերի 100% ոչնչացում</span></li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="/services/cleaning" class="link-arrow">
+                  <span data-i18n="btn_learn_more">Մանրամասն</span> <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="tel:+37441790679" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                  <i class="fas fa-phone-alt"></i> Պատվիրել
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3: Freon Refilling -->
+          <article class="service-card reveal-fade-up">
+            <div class="service-card-media">
+              <img src="/public/WhatsApp Image 2026-05-20 at 17.01.37 (4).jpeg" alt="HayClima Freon Refilling" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon"><i class="fas fa-temperature-low"></i></div>
+              <h3 class="service-card-title" data-i18n="serv2_title">Ֆրեոնի Լիցքավորում</h3>
+              <p class="service-card-desc" data-i18n="serv2_desc">
+                R32, R410A և R22 բարձրորակ ֆրեոնների լիցքավորում էլեկտրոնային կշեռքով և ճնշման ճշգրիտ դիագնոստիկայով:
+              </p>
+              <ul class="service-features-list">
+                <li><i class="fas fa-check"></i> <span data-i18n="serv2_feature1">Համակարգի ճնշման և հերմետիկության ստուգում</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv2_feature2">Ֆրեոնի արտահոսքի հայտնաբերում և վերացում</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv2_feature3">Օրիգինալ եվրոպական սերտիֆիկացված գազ</span></li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="/services/freon" class="link-arrow">
+                  <span data-i18n="btn_learn_more">Մանրամասն</span> <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="tel:+37441790679" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                  <i class="fas fa-phone-alt"></i> Պատվիրել
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4: Diagnostics & Repair -->
+          <article class="service-card reveal-fade-up delay-1">
+            <div class="service-card-media">
+              <img src="/public/WhatsApp Image 2026-05-20 at 17.01.37 (5).jpeg" alt="HayClima HVAC Repair" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon"><i class="fas fa-tools"></i></div>
+              <h3 class="service-card-title" data-i18n="serv4_title">Վերանորոգում և Դիագնոստիկա</h3>
+              <p class="service-card-desc" data-i18n="serv4_desc">
+                Կոմպրեսորների, էլեկտրոնային կառավարման սալիկների, դրենաժային համակարգերի և HVAC սարքավորումների վերանորոգում:
+              </p>
+              <ul class="service-features-list">
+                <li><i class="fas fa-check"></i> <span data-i18n="serv4_feature1">Էլեկտրոնիկայի և սենսորների փորձաքննություն</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv4_feature2">Կոնդենսատորների և շարժիչների փոխարինում</span></li>
+                <li><i class="fas fa-check"></i> <span data-i18n="serv4_feature3">Օրիգինալ պահեստամասերի տրամադրում</span></li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="/services/repair" class="link-arrow">
+                  <span data-i18n="btn_learn_more">Մանրամասն</span> <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="tel:+37441790679" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                  <i class="fas fa-phone-alt"></i> Պատվիրել
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="/services" class="btn-secondary" data-i18n="btn_all_services">
+            <i class="fas fa-list-check"></i> Բոլոր Ծառայությունները
           </a>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="public/WhatsApp Image 2026-05-20 at 17.01.37.jpeg" alt="Air Conditioner Service">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FEATURES -->
-  <section class="features" id="about">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-i18n="features_title">Ինչու ընտրել մեզ</h2>
-      </div>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-          <h3 data-i18n="feat1_title">Արագ Սպասարկում</h3>
-          <p data-i18n="feat1_desc">Մեր մասնագետները արագ մոտենում են Ձեր հասցեով։</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3 data-i18n="feat2_title">Որակ և Երաշխիք</h3>
-          <p data-i18n="feat2_desc">Բոլոր աշխականքների համար տրամադրում ենք երաշխիք։</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-clock"></i></div>
-          <h3 data-i18n="feat3_title">24/7 Աջակցություն</h3>
-          <p data-i18n="feat3_desc">Պատրաստ ենք աշխատել և արձագանքել ցանկացած ժամի։</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section class="about-section" id="about-details">
-    <div class="container about-container">
-      <div class="about-text-content">
-        <div class="glass-badge">
-          <i class="fas fa-star"></i>
-          <span data-i18n="about_badge">10+ Տարվա Փորձառություն</span>
-        </div>
-        <h2 data-i18n="about_title">Ովքե՞ր ենք մենք և ո՞րն է մեր առաքելությունը</h2>
-        <p class="about-lead" data-i18n="about_lead"><strong>HayClima.am</strong>-ը հանդիսանում է օդորակման և օդափոխության համակարգերի սպասարկման առաջատարներից մեկը Հայաստանում։</p>
-        <p class="about-description" data-i18n="about_desc">Մեր հիմնադրման առաջին իսկ օրվանից մեր նպատակն է եղել ապահովել կատարյալ միկրոկլիմա Ձեր բնակարաններում, գրասենյակներում և արտադրական տարածքներում։ Մենք չենք սահմանափակվում ուղղակի սովորական վերանորոգմամբ. մեր թիմն օգտագործում է բարձրակարգ սարքավորումներ՝ խորը քիմիական և հակաբակտերիալ մաքրում իրականացնելու համար, ինչը երաշխավորում է Ձեր առողջությունն ու տեխնիկայի երկարակեցությունը։</p>
-        <div class="about-points">
-          <div class="about-point-item"><i class="fas fa-check-circle"></i><span data-i18n="about_pt1">Սերտիֆիկացված և փորձառու մասնագետներ</span></div>
-          <div class="about-point-item"><i class="fas fa-check-circle"></i><span data-i18n="about_pt2">Էկոլոգիապես մաքուր և անվտանգ նյութեր</span></div>
-          <div class="about-point-item"><i class="fas fa-check-circle"></i><span data-i18n="about_pt3">Անհատական մոտեցում յուրաքանչյուր հաճախորդին</span></div>
-        </div>
-      </div>
-      <div class="about-stats-content">
-        <div class="about-stats-grid">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-smile"></i></div>
-            <div class="stat-number">4,500+</div>
-            <div class="stat-label" data-i18n="stat1">Գոհ Հաճախորդներ</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-handshake"></i></div>
-            <div class="stat-number">12,000+</div>
-            <div class="stat-label" data-i18n="stat2">Ավարտված Նախագծեր</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-medal"></i></div>
-            <div class="stat-number">100%</div>
-            <div class="stat-label" data-i18n="stat3">Որակի Երաշխիք</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="stat-number">25+</div>
-            <div class="stat-label" data-i18n="stat4">Սպասարկվող Շրջաններ</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-i18n="services_title">Մեր Ծառայությունները</h2>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-cogs"></i></div>
-          <h3 data-i18n="serv1_title">Տեղադրում</h3>
-          <p data-i18n="serv1_desc">Split և Multi-Split համակարգերի պրոֆեսիոնալ տեղադրում։</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-snowflake"></i></div>
-          <h3 data-i18n="serv2_title">Ֆրեոնի Լիցքավորում</h3>
-          <p data-i18n="serv2_desc">R32, R410A և R22 բարձրորակ ֆրեոնների լիցքավորում։</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-broom"></i></div>
-          <h3 data-i18n="serv3_title">Մաքրում</h3>
-          <p data-i18n="serv3_desc">Խորը քիմիական մաքրում և հակաբակտերիալ հակասնկային մշակում։</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-wrench"></i></div>
-          <h3 data-i18n="serv4_title">Վերանորոգում</h3>
-          <p data-i18n="serv4_desc">Կոմպրեսորների, էլեկտրոնային սալիկների և այլ մասերի վերանորոգում։</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-
-<section class="services" id="services">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span class="section-badge" data-i18n="services_badge">
-        HVAC SERVICES
-      </span>
-
-      <h2 data-i18n="services_title">
-        Օդափոխության և Օդորակման Համակարգեր
-      </h2>
-
-      <p class="section-desc" data-i18n="services_desc">
-        Մենք իրականացնում ենք օդափոխության և օդորակման համակարգերի
-        նախագծում, տեղադրում, սպասարկում և վերանորոգում։
-      </p>
-
-    </div>
-
-    <div class="services-grid">
-
-      <!-- SERVICE 1 -->
-
-      <div class="service-card">
-
-        <div class="service-image">
-          <img src="public/WhatsApp Image 2026-05-20 at 17.01.37 (2).jpeg" alt="HVAC Installation">
-        </div>
-
-        <div class="service-content">
-
-          <div class="service-icon">
-            <i class="fas fa-fan"></i>
-          </div>
-
-          <h3 data-i18n="serv1_title">
-            Օդափոխության Համակարգեր
-          </h3>
-
-          <p data-i18n="serv1_desc">
-            Տեղադրում և սպասարկում բնակարանների,
-            գրասենյակների և բիզնես տարածքների համար։
+    <!-- INTERACTIVE HVAC CALCULATOR SECTION -->
+    <section class="section-padding" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-kicker" data-i18n="calc_badge">ԱՐԱԳ ՀԱՇՎԻՉ</div>
+          <h2 class="section-title" data-i18n="calc_title">Հաշվեք Օդորակիչի Հզորությունն ու Արժեքը</h2>
+          <p class="section-subtitle" data-i18n="calc_desc">
+            Ընտրեք Ձեր սենյակի մակերեսը և ծառայությունը՝ անհրաժեշտ հզորությունը և նախնական արժեքը իմանալու համար:
           </p>
-
         </div>
 
+        <div class="calculator-box reveal-scale">
+          <div class="calculator-grid">
+            <div class="calc-controls-col">
+              <!-- Range Slider for Area -->
+              <div class="calc-field">
+                <div class="calc-label-wrap">
+                  <label for="calc-area-range" class="calc-label" data-i18n="calc_area_label">Տարածքի մակերեսը (մ²)</label>
+                  <span class="calc-value-badge" id="calc-area-value">25 մ²</span>
+                </div>
+                <input type="range" id="calc-area-range" class="calc-slider" min="10" max="100" value="25" step="1" />
+              </div>
+
+              <!-- Service Type Select -->
+              <div class="calc-field">
+                <label for="calc-service-type" class="calc-label" style="display: block; margin-bottom: 10px;" data-i18n="calc_service_label">Անհրաժեշտ Ծառայությունը</label>
+                <select id="calc-service-type" class="calc-select">
+                  <option value="cleaning" data-i18n="calc_service_clean">Խորը Քիմիական Մաքրում</option>
+                  <option value="install" data-i18n="calc_service_install">Տեղադրում (Մոնտաժ)</option>
+                  <option value="freon" data-i18n="calc_service_freon">Ֆրեոնի Լիցքավորում</option>
+                  <option value="repair" data-i18n="calc_service_repair">Վերանորոգում / Դիագնոստիկա</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Real Calculated Result Display -->
+            <div class="calc-results-col">
+              <div class="calc-results-card">
+                <div class="calc-result-row">
+                  <span class="calc-result-label" data-i18n="calc_result_btu">Առաջարկվող Հզորություն:</span>
+                  <span class="calc-result-val" id="calc-btu-result"><strong>12,000 BTU</strong> (3.5 kW)</span>
+                </div>
+                <div class="calc-result-row">
+                  <span class="calc-result-label" data-i18n="calc_result_est">Նախնական Հաշվարկ:</span>
+                  <span class="calc-result-val" id="calc-est-result" style="color: var(--primary-light);">15,000 - 20,000 ֏</span>
+                </div>
+                <a href="https://wa.me/37441790679" id="calc-order-whatsapp" target="_blank" class="btn-primary" style="justify-content: center; width: 100%; margin-top: 8px;">
+                  <i class="fab fa-whatsapp"></i> <span data-i18n="calc_btn_order">Պատվիրել WhatsApp-ով</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- SERVICE 2 -->
-
-      <div class="service-card">
-
-        <div class="service-image">
-          <img src="public/WhatsApp Image 2026-05-20 at 17.01.37 (3).jpeg" alt="Air Conditioner Service">
+    <!-- COMPLETED PROJECTS & GALLERY (Real Assets) -->
+    <section class="section-padding" id="projects">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-kicker" data-i18n="projects_badge">ԻՐԱԿԱՆԱՑՎԱԾ ԱՇԽԱՏԱՆՔՆԵՐ</div>
+          <h2 class="section-title" data-i18n="projects_title">Մեր Վերջին Նախագծերը</h2>
+          <p class="section-subtitle" data-i18n="projects_desc">
+            Ծանոթացեք մեր մասնագետների կողմից իրականացված իրական տեղադրման և սպասարկման աշխատանքներին:
+          </p>
         </div>
 
-        <div class="service-content">
+        <!-- Filter Segmented Tabs -->
+        <div class="portfolio-filter-tabs reveal-fade-up">
+          <button type="button" class="portfolio-filter-btn active" data-filter="all" data-i18n="filter_all">Բոլորը</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="install" data-i18n="filter_install">Տեղադրում</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="cleaning" data-i18n="filter_cleaning">Մաքրում</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="commercial" data-i18n="filter_commercial">Կոմերցիոն</button>
+        </div>
 
-          <div class="service-icon">
-            <i class="fas fa-snowflake"></i>
+        <div class="projects-grid">
+          <!-- Project 1: Balcony installation -->
+          <article class="project-card reveal-fade-up" data-category="install">
+            <div class="project-card-media">
+              <img src="/public/download (1).jpeg" alt="HayClima Split Unit Balcony Mounting" class="lightbox-trigger" data-full="/public/download (1).jpeg" loading="lazy" />
+              <div class="project-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span>Արաբկիր, Երևան</span> · <span>Split System 18,000 BTU</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="proj1_title">Սպլիտ Համակարգի Մոնտաժ Բնակարանում</h3>
+              <p class="project-card-desc">Արտաքին բլոկի ամրացում պատշգամբում, պղնձե տրասսայի վակուումացում և ներքին բլոկի ճշգրիտ հարթեցում:</p>
+            </div>
+          </article>
+
+          <!-- Project 2: Commercial HVAC -->
+          <article class="project-card reveal-fade-up delay-1" data-category="commercial">
+            <div class="project-card-media">
+              <img src="/public/download (2).jpeg" alt="HayClima Commercial Multi-Split HVAC" class="lightbox-trigger" data-full="/public/download (2).jpeg" loading="lazy" />
+              <div class="project-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span>Կենտրոն, Երևան</span> · <span>Multi-Split & Ducting</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="proj2_title">Օդափոխության Համակարգի Մոնտաժ Գրասենյակում</h3>
+              <p class="project-card-desc">Մի քանի գոտիական կլիմատ-կոնտրոլ համակարգի մոնտաժ, ծորակների հերմետիկացում և ֆրեոնային տրասսայի միացում:</p>
+            </div>
+          </article>
+
+          <!-- Project 3: Chemical cleaning with hood -->
+          <article class="project-card reveal-fade-up" data-category="cleaning">
+            <div class="project-card-media">
+              <img src="/public/download (3).jpeg" alt="HayClima Hydro Chemical Cleaning" class="lightbox-trigger" data-full="/public/download (3).jpeg" loading="lazy" />
+              <div class="project-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span>Դավթաշեն, Երևան</span> · <span>Hydro-cleaning & Steam</span>
+              </div>
+              <h3 class="project-card-title" data-i18n="proj3_title">Խորը Քիմիական Մաքրում Հիդրո-պարկով</h3>
+              <p class="project-card-desc">Ներքին բլոկի լվացում առանց պատերը կեղտոտելու՝ հիդրո-պաշտպանիչ պարկով, շվեդական դեզինֆեկտանտով:</p>
+            </div>
+          </article>
+
+          <!-- Project 4: Interior modern unit -->
+          <article class="project-card reveal-fade-up delay-1" data-category="install">
+            <div class="project-card-media">
+              <img src="/public/download.jpeg" alt="HayClima Interior AC Mounting" class="lightbox-trigger" data-full="/public/download.jpeg" loading="lazy" />
+              <div class="project-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span>Մալաթիա, Երևան</span> · <span>Inverter Quiet Split</span>
+              </div>
+              <h3 class="project-card-title">Ինվերտորային Օդորակիչի Տեղադրում Ննջասենյակում</h3>
+              <p class="project-card-desc">Թաքնված էլեկտրասնուցում և դրենաժային խողովակի ճիշտ թեքություն՝ անաղմուկ և հուսալի աշխատանքի համար:</p>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="/projects" class="btn-secondary">
+            <i class="fas fa-images"></i> Դիտել Բոլոր Նախագծերը
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION WITH ACCORDION -->
+    <section class="section-padding" id="faq" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-kicker" data-i18n="faq_badge">ՀԱՃԱԽ ՏՐՎՈՂ ՀԱՐՑԵՐ</div>
+          <h2 class="section-title" data-i18n="faq_title">Հաճախ Տրվող Հարցեր</h2>
+          <p class="section-subtitle" data-i18n="faq_desc">
+            Այստեղ ներկայացված են մեր հաճախորդներին ամենաշատը հետաքրքրող հարցերի պատասխանները:
+          </p>
+        </div>
+
+        <div class="faq-accordion-list reveal-fade-up">
+          <!-- Item 1 -->
+          <div class="faq-item active">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <h3 data-i18n="faq1_q">Ինչքա՞ն ժամանակում է մոտենում վարպետը և որքա՞ն է տևում տեղադրումը:</h3>
+              <span class="faq-icon-bubble"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq1_a">
+                Մեր մասնագետները մոտենում են զանգից հետո 1-2 ժամվա ընթացքում (կամ Ձեզ հարմար ֆիքսված ժամին)։ Ստանդարտ տեղադրումը տևում է մոտավորապես 2-3 ժամ՝ կախված պատի հաստությունից և բարդությունից։
+              </p>
+            </div>
           </div>
 
-          <h3 data-i18n="serv2_title">
-            Օդորակիչների Սպասարկում
-          </h3>
-
-          <p data-i18n="serv2_desc">
-            Split և Multi-Split համակարգերի
-            պրոֆեսիոնալ սպասարկում և մաքրում։
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- SERVICE 3 -->
-
-      <div class="service-card">
-
-        <div class="service-image">
-          <img src="public/WhatsApp Image 2026-05-20 at 17.01.37 (4).jpeg" alt="Freon Refill">
-        </div>
-
-        <div class="service-content">
-
-          <div class="service-icon">
-            <i class="fas fa-temperature-low"></i>
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <h3 data-i18n="faq2_q">Ի՞նչ է ներառում օդորակիչի քիմիական մաքրումը:</h3>
+              <span class="faq-icon-bubble"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq2_a">
+                Մաքրումը ներառում է ներքին և արտաքին բլոկների ամբողջական քանդում, հատուկ հակաբակտերիալ շվեդական նյութերով մշակում, բարձր ճնշման ջրով լվացում և տաք գոլորշիով ախտահանում, որը վերացնում է բոլոր տեսակի հոտերը, փոշին ու սնկերը։
+              </p>
+            </div>
           </div>
 
-          <h3 data-i18n="serv3_title">
-            Ֆրեոնի Լիցքավորում
-          </h3>
-
-          <p data-i18n="serv3_desc">
-            R32, R410A և R22 ֆրեոնների
-            անվտանգ և պրոֆեսիոնալ լիցքավորում։
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- SERVICE 4 -->
-
-      <div class="service-card">
-
-        <div class="service-image">
-          <img src="public/WhatsApp Image 2026-05-20 at 17.01.37 (5).jpeg" alt="Repair Service">
-        </div>
-
-        <div class="service-content">
-
-          <div class="service-icon">
-            <i class="fas fa-tools"></i>
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <h3 data-i18n="faq3_q">Ինչպե՞ս իմանալ, որ օդորակիչը ֆրեոնի լիցքավորման կարիք ունի:</h3>
+              <span class="faq-icon-bubble"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq3_a">
+                Հիմնական նշաններն են՝ օդորակիչը սովորականից թույլ է հովացնում/տաքացնում, արտաքին բլոկի փականների վրա սառույց է կապում, կամ ներքին բլոկից ջուր է կաթում: Նման դեպքերում անհրաժեշտ է անմիջապես ստուգել ճնշումը։
+              </p>
+            </div>
           </div>
 
-          <h3 data-i18n="serv4_title">
-            Վերանորոգում
-          </h3>
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <h3 data-i18n="faq4_q">Տրվու՞մ է արդյոք երաշխիք կատարված աշխատանքների համար:</h3>
+              <span class="faq-icon-bubble"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq4_a">
+                Այո, միանշանակ։ HayClima.am-ը ցանկացած տեղադրման, վերանորոգման կամ սպասարկման աշխատանքից հետո տրամադրում է պաշտոնական երաշխիքային թերթիկ՝ մինչև 1 տարի ժամկետով։
+              </p>
+            </div>
+          </div>
 
-          <p data-i18n="serv4_desc">
-            Կոմպրեսորների, սալիկների և
-            HVAC սարքավորումների վերանորոգում։
-          </p>
-
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <h3 data-i18n="faq5_q">Սպասարկու՞մ եք արդյոք Երևանից դուրս գտնվող մարզերը:</h3>
+              <span class="faq-icon-bubble"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq5_a">
+                Այո, մեր բրիգադները կատարում են պատվերներ ոչ միայն Երևանում, այլև Կոտայքի, Արարատի, Արմավիրի և Հայաստանի բոլոր այլ մարզերում:
+              </p>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </div>
+    <!-- CONTACT & FAST DISPATCH SECTION -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="contact-section-grid">
+          <!-- Contact Direct Channels Card -->
+          <div class="contact-info-card reveal-fade-up">
+            <div class="section-kicker" data-i18n="contact_badge">ԱՐԱԳ ԿԱՊ</div>
+            <h2 class="section-title" data-i18n="contact_title">Կապ մեզ հետ</h2>
+            <p data-i18n="contact_desc">
+              Զանգահարեք կամ թողեք հայտ, և մեր մասնագետները արագ կմոտենան Ձեր հասցեով:
+            </p>
 
-  </div>
+            <div class="contact-method-list">
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <div class="contact-method-title">Հիմնական Հեռախոսահամար</div>
+                  <div class="contact-method-value">
+                    <a href="tel:+37441790679">+374 41 790679</a>
+                  </div>
+                </div>
+              </div>
 
-</section>
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <div class="contact-method-title">Լրացուցիչ Հեռախոսահամար</div>
+                  <div class="contact-method-value">
+                    <a href="tel:+37494314014">+374 94 314014</a>
+                  </div>
+                </div>
+              </div>
 
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <div class="contact-method-title">Հասցե և Շրջաններ</div>
+                  <div class="contact-method-value" data-i18n="contact_address">Երևան, Հայաստան (Սպասարկում ողջ ՀՀ տարածքում)</div>
+                </div>
+              </div>
 
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div class="contact-method-title">Աշխատանքային Ռեժիմ</div>
+                  <div class="contact-method-value" data-i18n="contact_hours">Երկ - Կիր, 24/7 Վթարային և Պլանային Սպասարկում</div>
+                </div>
+              </div>
+            </div>
 
+            <div class="social-pills-row">
+              <a href="https://wa.me/37441790679" target="_blank" class="social-btn">
+                <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp
+              </a>
+              <a href="https://t.me/HayClimaAdmin" target="_blank" class="social-btn">
+                <i class="fab fa-telegram-plane" style="color: #0088cc;"></i> Telegram
+              </a>
+              <a href="https://www.instagram.com/hayclima" target="_blank" class="social-btn">
+                <i class="fab fa-instagram" style="color: #e1306c;"></i> Instagram
+              </a>
+              <a href="https://www.facebook.com/HayClimaArm" target="_blank" class="social-btn">
+                <i class="fab fa-facebook-f" style="color: #1877f2;"></i> Facebook
+              </a>
+            </div>
+          </div>
 
+          <!-- Contact / Dispatch Form -->
+          <div class="contact-form-card reveal-fade-up delay-1">
+            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Ուղարկել Առցանց Հայտ</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 24px;">Լրացրեք տվյալները, և ինժեները կկապնվի Ձեզ հետ մի քանի րոպեում:</p>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+            <form class="ajax-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="home-name">Ձեր Անունը *</label>
+                <input type="text" id="home-name" name="name" class="form-control" placeholder="Արմեն" data-i18n-placeholder="form_name_placeholder" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="home-phone">Հեռախոսահամար *</label>
+                <input type="tel" id="home-phone" name="phone" class="form-control" placeholder="+374..." data-i18n-placeholder="form_phone_placeholder" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="home-service">Անհրաժեշտ Ծառայությունը</label>
+                <select id="home-service" name="service" class="form-control">
+                  <option value="Installation">Տեղադրում (Մոնտաժ)</option>
+                  <option value="Cleaning">Խորը Քիմիական Մաքրում</option>
+                  <option value="Freon">Ֆրեոնի Լիցքավորում</option>
+                  <option value="Repair">Վերանորոգում / Դիագնոստիկա</option>
+                  <option value="Consultation">Անվճար Խորհրդատվություն</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="home-msg">Հասցե կամ մանրամասներ</label>
+                <textarea id="home-msg" name="message" class="form-control" placeholder="Օրինակ՝ Երևան, Կոմիտաս 25..." data-i18n-placeholder="form_msg_placeholder"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fas fa-paper-plane"></i> <span data-i18n="form_btn_submit">Ուղարկել Հայտը</span>
+              </button>
+
+              <div class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ULTRA PREMIUM FOOTER -->
+  <footer>
     <div class="container">
-      <div class="contact-box">
-        <h2 data-i18n="contact_title">Կապ մեզ հետ</h2>
-        <p data-i18n="contact_desc">Զանգահարեք և մեր մասնագետները արագ կմոտենան Ձեր հասցեով։</p>
-        <div class="numbers">
-          <a href="tel:+37441790679" class="contact-link"><i class="fas fa-phone-alt"></i> +374 41 790679</a>
-          <a href="tel:+37494314014" class="contact-link"><i class="fas fa-phone-alt"></i> +374 94 314014</a>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- FAQ SECTION -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-i18n="faq_title">Հաճախ Տրվող Հարցեր</h2>
-      </div>
-
-      <div class="faq-container">
-        <!-- Item 1 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3 data-i18n="faq1_q">Ինչքա՞ն ժամանակում է մոտենում վարպետը և որքա՞ն է տևում տեղադրումը:</h3>
-            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq1_a">Մեր մասնագետները մոտենում են զանգից հետո 1-2 ժամվա ընթացքում (կամ Ձեզ հարմար ֆիքսված ժամին)։ Ստանդարտ տեղադրումը տևում է մոտավորապես 2-3 ժամ՝ կախված պատի հաստությունից և բարդությունից։</p>
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <a href="/" class="logo-wrapper">
+            <img src="/public/photo_2026-05-20_13.06.10-removebg-preview.png" alt="HayClima Logo" class="logo-img" style="height: 52px;" />
+            <div class="logo-text-block">
+              <span class="logo-title">Hay<span>Clima</span>.am</span>
+              <span class="logo-subtitle" data-i18n="brand_sub">Կլիմայական Համակարգեր</span>
+            </div>
+          </a>
+          <p data-i18n="footer_text">
+            Օդորակիչների պրոֆեսիոնալ տեղադրում, քիմիական մաքրում, ֆրեոնի լիցքավորում և երաշխիքային սպասարկում Ձեր բնակարանում կամ գրասենյակում։
+          </p>
+          <div class="social-pills-row">
+            <a href="https://www.instagram.com/hayclima" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/HayClimaArm" target="_blank" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://t.me/HayClimaAdmin" target="_blank" class="social-btn" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://www.tiktok.com/@hayclima" target="_blank" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
 
-        <!-- Item 2 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3 data-i18n="faq2_q">Ի՞նչ է ներառում օդորակիչի քիմիական մաքրումը:</h3>
-            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq2_a">Մաքրումը ներառում է ներքին և արտաքին բլոկների ամբողջական քանդում, հատուկ հակաբակտերիալ շվեդական նյութերով մշակում, բարձր ճնշման ջրով լվացում և տաք գոլորշիով ախտահանում, որը վերացնում է բոլոր տեսակի հոտերը, փոշին ու սնկերը։</p>
-          </div>
+        <!-- Services Links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_h_services">Ծառայություններ</h4>
+          <ul>
+            <li><a href="/services/installation" data-i18n="f_serv1">Պրոֆեսիոնալ Տեղադրում</a></li>
+            <li><a href="/services/cleaning" data-i18n="f_serv3">Խորը Քիմիական Մաքրում</a></li>
+            <li><a href="/services/freon" data-i18n="f_serv2">Ֆրեոնի Լիցքավորում</a></li>
+            <li><a href="/services/repair" data-i18n="serv4_title">Վերանորոգում</a></li>
+            <li><a href="/contact" data-i18n="f_serv5">Անվճար Խորհրդատվություն</a></li>
+          </ul>
         </div>
 
-        <!-- Item 3 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3 data-i18n="faq3_q">Ինչպե՞ս իմանալ, որ օդորակիչը ֆրեոնի լիցքավորման կարիք ունի:</h3>
-            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq3_a">Հիմնական նշաններն են՝ օդորակիչը սովորականից թույլ է հովացնում/տաքացնում, արտաքին բլոկի փականների վրա սառույց է կապում, կամ ներքին բլոկից ջուր է կաթում: Նման դեպքերում անհրաժեշտ է անմիջապես ստուգել ճնշումը։</p>
-          </div>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_h_links">Արագ Հղումներ</h4>
+          <ul>
+            <li><a href="/" data-i18n="nav_home">Գլխավոր</a></li>
+            <li><a href="/about" data-i18n="nav_about">Մեր Մասին</a></li>
+            <li><a href="/services" data-i18n="nav_services">Ծառայություններ</a></li>
+            <li><a href="/products" data-i18n="nav_products">Սարքավորումներ</a></li>
+            <li><a href="/projects" data-i18n="nav_projects">Նախագծեր</a></li>
+            <li><a href="/contact" data-i18n="nav_contact">Կոնտակտներ</a></li>
+          </ul>
         </div>
 
-        <!-- Item 4 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h3 data-i18n="faq4_q">Տրվու՞մ է արդյոք երաշխիք կատարված աշխատանքների համար:</h3>
-            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq4_a">Այո, միանշանակ։ HayClima.am-ը ցանկացած տեղադրման, վերանորոգման կամ սպասարկման աշխատանքից հետո տրամադրում է պաշտոնական երաշխիքային թերթիկ՝ մինչև 1 տարի ժամկետով։</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-blur footer-blur-1"></div>
-    <div class="footer-blur footer-blur-2"></div>
-    <div class="container footer-container">
-      <div class="footer-col">
-        <h2>Hay<span>Clima.am</span></h2>
-        <p class="footer-text" data-i18n="footer_text">Օդորակիչների պրոֆեսիոնալ տեղադրում, քիմիական մաքրում, ֆրեոնի լիցքավորում և երաշխիքային սպասարկում Ձեր բնակարանում կամ գրասենյակում։</p>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/hayclima?utm_source=qr&igsh=MXBxb3g1NGdqMjE0Zg==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href="https://www.facebook.com/HayClimaArm?rdid=GQWDkxtwBmwaGOWN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BAbESqcww%2F%3Fref%3D1#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
-          <a href="https://t.me/HayClimaAdmin" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
-          <a href="https://www.tiktok.com/@hayclima?_r=1&_t=ZS-96WLAZ9kDGp" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h3 data-i18n="footer_h_services">Ծառայություններ</h3>
-        <ul>
-          <li><a href="#services" data-i18n="f_serv1">Պրոֆեսիոնալ Տեղադրում</a></li>
-          <li><a href="#services" data-i18n="f_serv2">Ֆրեոնի Լիցքավորում</a></li>
-          <li><a href="#services" data-i18n="f_serv3">Խորը Քիմիական Մաքրում</a></li>
-          <li><a href="#services" data-i18n="f_serv4">Հակաբակտերիալ Մշակում</a></li>
-          <li><a href="#services" data-i18n="f_serv5">Անվճար Խորհրդատվություն</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3 data-i18n="footer_h_links">Արագ Հղումներ</h3>
-        <ul>
-          <li><a href="#home" data-i18n="nav_home">Գլխավոր էջ</a></li>
-          <li><a href="#about" data-i18n="nav_about">Մեր Մասին</a></li>
-          <li><a href="#services" data-i18n="nav_services">Ծառայություններ</a></li>
-          <li><a href="#contact" data-i18n="nav_contact">Հետադարձ Կապ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3 data-i18n="footer_h_contacts">Կոնտակտներ</h3>
-        <ul style="list-style: none; margin-bottom: 20px;">
-          <li style="margin-bottom: 10px;"><a href="tel:+37441790679" style="text-decoration:none; color:var(--color-text-sub);"><i class="fas fa-phone" style="margin-right:8px; color:#00aaff;"></i>+374 41 790679</a></li>
-          <li style="margin-bottom: 10px;"><a href="tel:+37494314014" style="text-decoration:none; color:var(--color-text-sub);"><i class="fas fa-phone" style="margin-right:8px; color:#00aaff;"></i>+374 94 314014</a></li>
-          <li style="margin-bottom: 10px;"><a href="#" style="text-decoration:none; color:var(--color-text-sub);"><i class="fas fa-envelope" style="margin-right:8px; color:#00aaff;"></i>info@hayclima.am</a></li>
-        </ul>
+        <!-- Contacts & Settings -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_h_contacts">Կոնտակտներ</h4>
+          <ul>
+            <li><a href="tel:+37441790679"><i class="fas fa-phone" style="margin-right: 8px; color: var(--primary-light);"></i> +374 41 790679</a></li>
+            <li><a href="tel:+37494314014"><i class="fas fa-phone" style="margin-right: 8px; color: var(--primary-light);"></i> +374 94 314014</a></li>
+            <li><a href="mailto:info@hayclima.am"><i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary-light);"></i> info@hayclima.am</a></li>
+          </ul>
 
-        <!-- Footer Language Switcher -->
-        <div class="language-switcher">
-          <button class="lang-btn active" onclick="switchLanguage('hy')">🇦🇲 AM</button>
-          <button class="lang-btn" onclick="switchLanguage('en')">🇺🇸 EN</button>
-          <button class="lang-btn" onclick="switchLanguage('ru')">🇷🇺 RU</button>
+          <div style="margin-top: 24px;">
+            <div class="language-switcher" style="margin-bottom: 12px;">
+              <button type="button" class="lang-btn active" data-lang="hy">AM</button>
+              <button type="button" class="lang-btn" data-lang="en">EN</button>
+              <button type="button" class="lang-btn" data-lang="ru">RU</button>
+            </div>
+            <button type="button" class="theme-toggle theme-toggle-full" style="width: 100%; border-radius: 10px; padding: 10px; justify-content: center; gap: 8px;">
+              <i class="fas fa-sun"></i> <span>Light Mode</span>
+            </button>
+          </div>
         </div>
-
-        <!-- Footer Theme Switcher -->
-        <button class="theme-toggle" onclick="toggleGlobalTheme()">
-          <i class="fas fa-sun" style="margin-right: 8px;"></i> Light Mode
-        </button>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p id="copyright_text">© 2026 HayClima.am — Բոլոր իրավունքները պաշտպանված են։</p>
-      <p style="font-size: 13px; margin-top: 8px; opacity: 0.85;">
-        Designed & Developed by 
-        <a href="https://www.instagram.com/mkheyan.agency/" target="_blank" style="color: #00aaff; text-decoration: none; font-weight: 700; transition: 0.3s; letter-spacing: 0.5px;">
-          Mkheyan <span style="color: #00ffcc;">Agency</span> <i class="fas fa-external-link-alt" style="font-size: 10px; margin-left: 3px;"></i>
-        </a>
-      </p>
+
+      <div class="footer-bottom">
+        <p data-i18n="copyright">© 2026 HayClima.am — Բոլոր իրավունքները պաշտպանված են։</p>
+        <p>
+          <span data-i18n="agency_credit">Designed & Developed by</span> 
+          <a href="https://www.instagram.com/mkheyan.agency/" target="_blank" class="agency-link">
+            Mkheyan Agency <i class="fas fa-external-link-alt" style="font-size: 11px;"></i>
+          </a>
+        </p>
+      </div>
     </div>
   </footer>
 
-  <!-- CORE JAVASCRIPT FOR MULTILANGUAGE AND INTERACTIVE UI -->
-  <script>
-    // 1. Language Dictionary (HY, EN, RU)
-    const translations = {
-      hy: {
-        nav_home: "Գլխավոր",
-        nav_services: "Ծառայություններ",
-        nav_about: "Մեր մասին",
-        nav_contact: "Կոնտակտ",
-        btn_call: "Զանգահարել",
-        hero_title: "Պրոֆեսիոնալ <span>Օդորակիչների</span> Սպասարկում",
-        hero_desc: "Տեղադրում, մաքրում, ֆրեոնի լիցքավորում և վերանորոգում անմիջապես Ձեր հասցեում։",
-        hero_btn_services: "<i class='fas fa-tools'></i> Մեր ծառայությունները",
-        features_title: "Ինչու ընտրել մեզ",
-        feat1_title: "Արագ Սպասարկում",
-        feat1_desc: "Մեր մասնագետները արագ մոտենում են Ձեր հասցեով։",
-        feat2_title: "Որակ և Երաշխիք",
-        feat2_desc: "Բոլոր աշխատանքների համար տրամադրում ենք երաշխիք։",
-        feat3_title: "24/7 Աջակցություն",
-        feat3_desc: "Պատրաստ ենք աշխատել և արձագանքել ցանկացած ժամի։",
-        about_badge: "10+ Տարվա Փորձառություն",
-        about_title: "Ովքե՞ր ենք մենք և ո՞րն է մեր առաքելությունը",
-        about_lead: "<strong>HayClima.am</strong>-ը հանդիսանում է օդորակման և օդափոխության համակարգերի սպասարկման առաջատարներից մեկը Հայաստանում։",
-        about_desc: "Մեր հիմնադրման առաջին իսկ օրվանից մեր նպատակն է եղել ապահովել կատարյալ միկրոկլիմա Ձեր բնակարաններում, գրասենյակներում և արտադրական տարածքներում։ Մենք չենք սահմանափակվում ուղղակի սովորական վերանորոգմամբ. մեր թիմն օգտագործում է բարձրակարգ սարքավորումներ՝ խորը քիմիական և հակաբակտերիալ մաքրում իրականացնելու համար, ինչը երաշխավորում է Ձեր առողջությունն ու տեխնիկայի երկարակեցությունը։",
-        about_pt1: "Սերտիֆիկացված և փորձառու մասնագետներ",
-        about_pt2: "Էկոլոգիապես մաքուր և անվտանգ նյութեր",
-        about_pt3: "Անհատական մոտեցում յուրաքանչյուր հաճախորդին",
-        stat1: "Գոհ Հաճախորդներ", stat2: "Ավարտված Նախագծեր", stat3: "Որակի Երաշխիք", stat4: "Սպասարկվող Շրջաններ",
-        services_title: "Մեր Ծառայությունները",
-        serv1_title: "Տեղադրում",
-        serv1_desc: "Split և Multi-Split համակարգերի պրոֆեսիոնալ տեղադրում։",
-        serv2_title: "Ֆրեոնի Լիցքավորում",
-        serv2_desc: "R32, R410A և R22 բարձրորակ ֆրեոնների լիցքավորում։",
-        serv3_title: "Մաքրում",
-        serv3_desc: "Խորը քիմիական մաքրում և հակաբակտերիալ հակասնկային մշակում։",
-        serv4_title: "Վերանորոգում",
-        serv4_desc: "Կոմպրեսորների, էլեկտրոնային սալիկների և այլ մասերի վերանորոգում։",
-        contact_title: "Կապ մեզ հետ",
-        contact_desc: "Զանգահարեք և մեր մասնագետները արագ կմոտենան Ձեր հասցեով։",
-        footer_text: "Օդորակիչների պրոֆեսիոնալ տեղադրում, քիմիական մաքրում, ֆրեոնի լիցքավորում և երաշխիքային սպասարկում Ձեր բնակարանում կամ գրասենյակում։",
-        footer_h_services: "Ծառայություններ",
-        footer_h_links: "Արագ Հղումներ",
-        footer_h_contacts: "Կոնտակտներ",
-        f_serv1: "Պրոֆեսիոնալ Տեղադրում", f_serv2: "Ֆրեոնի Լիցքավորում", f_serv3: "Խորը Քիմիական Մաքրում", f_serv4: "Հակաբակտերիալ Մշակում", f_serv5: "Անվճար Խորհրդատվություն",
-        copyright: "© 2026 HayClima.am — Բոլոր իրավունքները պաշտպանված են։",
-        faq_title: "Հաճախ Տրվող Հարցեր",
-        faq1_q: "Ինչքա՞ն ժամանակում է մոտենում վարպետը և որքա՞ն է տևում տեղադրումը:",
-        faq1_a: "Մեր մասնագետները մոտենում են զանգից հետո 1-2 ժամվա ընթացքում (կամ Ձեզ հարմար ֆիքսված ժամին)։ Ստանդարտ տեղադրումը տևում է մոտավորապես 2-3 ժամ՝ կախված պատի հաստությունից և բարդությունից։",
-        faq2_q: "Ի՞նչ է ներառում օդորակիչի քիմիական մաքրումը:",
-        faq2_a: "Մաքրումը ներառում է ներքին և արտաքին բլոկների ամբողջական քանդում, հատուկ հակաբակտերիալ շվեդական նյութերով մշակում, բարձր ճնշման ջրով լվացում և տաք գոլորշիով ախտահանում, որը վերացնում է բոլոր տեսակի հոտերը, փոշին ու սնկերը։",
-        faq3_q: "Ինչպե՞ս իմանալ, որ օդորակիչը ֆրեոնի լիցքավորման կարիք ունի:",
-        faq3_a: "Հիմնական նշաններն են՝ օդորակիչը սովորականից թույլ է հովացնում/տաքացնում, արտաքին բլոկի փականների վրա սառույց է կապում, կամ ներքին բլոկից ջուր է կաթում: Նման դեպքերում անհրաժեշտ է անմиջապես ստուգել ճնշումը։",
-        faq4_q: "Տրվու՞մ է արդյոք երաշխիք կատարված աշխատանքների համար:",
-        faq4_a: "Այո, միանշանակ։ HayClima.am-ը ցանկացած տեղադրման, վերանորոգման կամ սպասարկման աշխատանքից հետո տրամադրում է պաշտոնական երաշխիքային թերթիկ՝ մինչև 1 տարի ժամկետով։",
-         services_badge: "HVAC ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ",
+  <!-- MOBILE FLOATING ACTION BAR FOR HIGHEST CONVERSION -->
+  <div class="mobile-action-bar">
+    <div class="mobile-action-grid">
+      <a href="tel:+37441790679" class="btn-mobile-call">
+        <i class="fas fa-phone-alt"></i> <span data-i18n="btn_call">Զանգահարել</span>
+      </a>
+      <a href="https://wa.me/37441790679" target="_blank" class="btn-mobile-whatsapp">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
 
-    services_title:
-      "Օդափոխության և Օդորակման Համակարգեր",
-
-    services_desc:
-      "Մենք իրականացնում ենք օդափոխության և օդորակման համակարգերի նախագծում, տեղադրում, սպասարկում և վերանորոգում։",
-
-    serv1_title:
-      "Օդափոխության Համակարգեր",
-
-    serv1_desc:
-      "Տեղադրում և սպասարկում բնակարանների, գրասենյակների և բիզնես տարածքների համար։",
-
-    serv2_title:
-      "Օդորակիչների Սպասարկում",
-
-    serv2_desc:
-      "Split և Multi-Split համակարգերի պրոֆեսիոնալ սպասարկում և մաքրում։",
-
-    serv3_title:
-      "Ֆրեոնի Լիցքավորում",
-
-    serv3_desc:
-      "R32, R410A և R22 ֆրեոնների անվտանգ և պրոֆեսիոնալ լիցքավորում։",
-
-    serv4_title:
-      "Վերանորոգում",
-
-    serv4_desc:
-      "Կոմպրեսորների, սալիկների և HVAC սարքավորումների վերանորոգում։"
-      },
-      en: {
-        nav_home: "Home",
-        nav_services: "Services",
-        nav_about: "About Us",
-        nav_contact: "Contact",
-        btn_call: "Call Now",
-        hero_title: "Professional <span>Air Conditioner</span> Services",
-        hero_desc: "Installation, chemical cleaning, freon refilling, and professional repair straight to your location.",
-        hero_btn_services: "<i class='fas fa-tools'></i> Our Services",
-        features_title: "Why Choose Us",
-        feat1_title: "Fast Response",
-        feat1_desc: "Our high-skilled specialists quickly arrive right at your address.",
-        feat2_title: "Quality & Warranty",
-        feat2_desc: "We provide an official reliable warranty for all kinds of our work.",
-        feat3_title: "24/7 Support",
-        feat3_desc: "Ready to work and answer your requests at any time of the day.",
-        about_badge: "10+ Years of Experience",
-        about_title: "Who We Are & What Is Our Real Mission",
-        about_lead: "<strong>HayClima.am</strong> is one of the leading air conditioning and ventilation service providers in Armenia.",
-        about_desc: "From the very first day of our foundation, our main goal has been to ensure the perfect microclimate in your homes, offices, and industrial spaces. We don't just do basic repairs; our team uses advanced equipment to perform deep chemical and antibacterial cleaning, ensuring your health and device longevity.",
-        about_pt1: "Certified and heavily experienced technicians",
-        about_pt2: "Eco-friendly and fully safe materials",
-        about_pt3: "Individual premium approach to every customer",
-        stat1: "Happy Clients", stat2: "Finished Projects", stat3: "Quality Guarantee", stat4: "Regions Covered",
-        services_title: "Our Core Services",
-        serv1_title: "Installation",
-        serv1_desc: "Professional premium installation of Split and Multi-Split systems.",
-        serv2_title: "Freon Refilling",
-        serv2_desc: "High-grade R32, R410A, and R22 freon refilling and top-up.",
-        serv3_title: "Deep Cleaning",
-        serv3_desc: "Deep antibacterial chemical cleaning and premium sanitization.",
-        serv4_title: "Repair Work",
-        serv4_desc: "Fixing compressors, electronic control boards, and other hardware.",
-        contact_title: "Contact Us Now",
-        contact_desc: "Call us and our master technicians will instantly visit your location.",
-        footer_text: "Professional premium air conditioner installation, chemical cleaning, freon refilling, and dedicated warranty service at your home or corporate office.",
-        footer_h_services: "Services",
-        footer_h_links: "Quick Links",
-        footer_h_contacts: "Contacts",
-        f_serv1: "Professional Installation", f_serv2: "Freon Refilling", f_serv3: "Deep Chemical Cleaning", f_serv4: "Antibacterial Treatment", f_serv5: "Free Consultation",
-        copyright: "© 2026 HayClima.am — All Rights Reserved.",
-        faq_title: "Frequently Asked Questions",
-        faq1_q: "How fast does the technician arrive and how long does the installation take?",
-        faq1_a: "Our specialists arrive within 1-2 hours after the call (or at a fixed time convenient for you). Standard installation takes approximately 2-3 hours, depending on the thickness and complexity of the wall.",
-        faq2_q: "What does the chemical cleaning of the air conditioner include?",
-        faq2_a: "Cleaning includes complete disassembly of indoor and outdoor units, treatment with special antibacterial Swedish agents, high-pressure water washing, and hot steam disinfection, which eliminates all types of odors, dust, and fungi.",
-        faq3_q: "How do I know if my air conditioner needs a freon refill?",
-        faq3_a: "The main signs are: the air conditioner cools/heats weaker than usual, ice forms on the valves of the outdoor unit, or water leaks from the indoor unit. In such cases, it is necessary to check the pressure immediately.",
-        faq4_q: "Is there a warranty provided for the work performed?",
-        faq4_a: "Yes, absolutely! After any installation, repair, or maintenance work, HayClima.am provides an official warranty certificate for up to 1 year.",
-      },
-      ru: {
-        nav_home: "Главная",
-        nav_services: "Услуги",
-        nav_about: "О нас",
-        nav_contact: "Контакты",
-        btn_call: "Позвонить",
-        hero_title: "Профессиональный Сервис <span>Кондиционеров</span>",
-        hero_desc: "Установка, чистка, заправка фреоном и ремонт прямо по вашему адресу.",
-        hero_btn_services: "<i class='fas fa-tools'></i> Наши Услуги",
-        features_title: "Почему выбирают нас",
-        feat1_title: "Быстрый Выезд",
-        feat1_desc: "Наши мастера оперативно выезжают на ваш адрес сразу после вызова.",
-        feat2_title: "Качество и Гарантия",
-        feat2_desc: "Мы предоставляем надежную официальную гарантию на все выполненные работы.",
-        feat3_title: "Поддержка 24/7",
-        feat3_desc: "Готовы работать и реагировать на ваши заявки в любое время суток.",
-        about_badge: "10+ Лет Опыта Работы",
-        about_title: "Кто мы и в чем заключается наша миссия",
-        about_lead: "<strong>HayClima.am</strong> является одним из ведущих поставщиков услуг по кондиционированию и вентиляции в Армении.",
-        about_desc: "С самого первого дня нашего основания главной целью было обеспечение идеального микроклимата в ваших домах, офисах и промышленных помещениях. Мы не ограничиваемся обычным ремонтом; наша команда использует передовое оборудование для проведения глубокой химической и антибактериальной очистки, что гарантирует ваше здоровье и долговечность техники.",
-        about_pt1: "Сертифицированные мастера с большим стажем",
-        about_pt2: "Экологически чистые и полностью безопасные средства",
-        about_pt3: "Индивидуальный подход к каждому любимому клиенту",
-        stat1: "Довольных Клиентов", stat2: "Готовых Объектов", stat3: "Гарантия Качества", stat4: "Обслуженных Районов",
-        services_title: "Наши Услуги",
-        serv1_title: "Установка",
-        serv1_desc: "Профессиональный премиум монтаж Сплит и Мульти-Сплит систем.",
-        serv2_title: "Заправка Фреоном",
-        serv2_desc: "Заправка качественным фреоном марок R32, R410A и R22.",
-        serv3_title: "Чистка и Мойка",
-        serv3_desc: "Глубокая химическая чистка и полная антибактериальная обработка.",
-        serv4_title: "Ремонт",
-        serv4_desc: "Ремонт компрессоров, плат управления и замена любых запчастей.",
-        contact_title: "Связаться с нами",
-        contact_desc: "Позвоните нам, и наши квалифицированные специалисты быстро приедут к вам.",
-        footer_text: "Профессиональная установка кондиционеров, химическая чистка, заправка фреоном и полное гарантийное обслуживание у вас дома или в офисе.",
-        footer_h_services: "Услуги",
-        footer_h_links: "Быстрые Ссылки",
-        footer_h_contacts: "Контакты",
-        f_serv1: "Профессиональный Монтаж", f_serv2: "Заправка Фреоном", f_serv3: "Глубокая Химчистка", f_serv4: "Антибактериальная Обработка", f_serv5: "Бесплатная Консультация",
-        copyright: "© 2026 HayClima.am — Все права защищены.",
-        faq_title: "Часто Задаваемые Вопросы",
-        faq1_q: "Как быстро приезжает мастер и сколько времени занимает установка?",
-        faq1_a: "Наши специалисты приезжают в течение 1-2 часов после звонка (или в удобное для вас фиксированное время). Стандартный монтаж занимает примерно 2-3 часа, в зависимости от толщины и сложности стены.",
-        faq2_q: "Что включает в себя химическая чистка кондиционера?",
-        faq2_a: "Чистка включает полную разборку внутреннего и внешнего блоков, обработку специальными антибактериальными шведскими средствами, мойку водой под высоким давлением и дезинфекцию горячим паром, уничтожающую все виды запахов, пыли и грибков.",
-        faq3_q: "Как узнать, что кондиционер нуждается в заправке фреоном?",
-        faq3_a: "Основные признаки: кондиционер охлаждает/греет слабее обычного, на клапанах внешнего блока образуется налед или из внутреннего блока капает вода. В таких случаях необходимо немедленно проверить давление.",
-        faq4_q: "Предоставляется ли гарантия на выполненные работы?",
-        faq4_a: "Да, обязательно! После любых работ по установке, ремонту или обслуживанию HayClima.am предоставляет официальный гарантийный талон сроком до 1 года.",
-         services_badge: "HVAC УСЛУГИ",
-
-    services_title:
-      "Системы Вентиляции и Кондиционирования",
-
-    services_desc:
-      "Мы выполняем проектирование, установку, обслуживание и ремонт систем вентиляции и кондиционирования.",
-
-    serv1_title:
-      "Системы Вентиляции",
-
-    serv1_desc:
-      "Установка и обслуживание для квартир, офисов и коммерческих помещений.",
-
-    serv2_title:
-      "Обслуживание Кондиционеров",
-
-    serv2_desc:
-      "Профессиональное обслуживание и чистка Split и Multi-Split систем.",
-
-    serv3_title:
-      "Заправка Фреоном",
-
-    serv3_desc:
-      "Безопасная и профессиональная заправка фреоном R32, R410A и R22.",
-
-    serv4_title:
-      "Ремонт",
-
-    serv4_desc:
-      "Ремонт компрессоров, плат и HVAC оборудования."
-      }
-    };
-
-    // 2. Language Switcher Engine
-    function switchLanguage(lang) {
-      document.querySelectorAll("[data-i18n]").forEach(element => {
-        const key = element.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-          element.innerHTML = translations[lang][key];
-        }
-      });
-
-      document.getElementById("copyright_text").innerText = translations[lang]["copyright"];
-
-      // Update active classes for all language switchers (Header and Footer)
-      document.querySelectorAll(".language-switcher").forEach(switcher => {
-        const buttons = switcher.querySelectorAll(".lang-btn");
-        buttons.forEach(btn => btn.classList.remove("active"));
-        
-        // Match lang codes to active buttons properly
-        if (buttons.length >= 3) {
-          if (lang === 'hy') buttons[0].classList.add("active");
-          if (lang === 'en') buttons[1].classList.add("active");
-          if (lang === 'ru') buttons[2].classList.add("active");
-        }
-      });
-
-      localStorage.setItem("preferredLanguage", lang);
-    }
-
-    // 3. Live Global Theme Controller Switch (Dark / Light)
-    function toggleGlobalTheme() {
-      const htmlElement = document.documentElement;
-      const currentTheme = htmlElement.getAttribute('data-theme');
-      const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      htmlElement.setAttribute('data-theme', targetTheme);
-      localStorage.setItem("selectedTheme", targetTheme);
-      
-      // Update Inner text labels for all theme triggers syncly
-      const moonIcon = '<i class="fas fa-moon" style="margin-right: 8px;"></i> Dark Mode';
-      const sunIcon = '<i class="fas fa-sun" style="margin-right: 8px;"></i> Light Mode';
-      
-      document.querySelectorAll(".theme-toggle").forEach(btn => {
-        btn.innerHTML = targetTheme === 'dark' ? sunIcon : moonIcon;
-      });
-
-      const navThemeBtn = document.getElementById("navThemeBtn");
-      if (navThemeBtn) {
-        navThemeBtn.innerHTML = targetTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-      }
-    }
-
-    // Load initial settings on start up
-    window.addEventListener("DOMContentLoaded", () => {
-      const savedLang = localStorage.getItem("preferredLanguage") || "hy";
-      switchLanguage(savedLang);
-
-      const savedTheme = localStorage.getItem("selectedTheme") || "dark";
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      
-      const navThemeBtn = document.getElementById("navThemeBtn");
-      if (savedTheme === 'light') {
-        document.querySelectorAll(".theme-toggle").forEach(btn => btn.innerHTML = '<i class="fas fa-moon" style="margin-right: 8px;"></i> Dark Mode');
-        if (navThemeBtn) navThemeBtn.innerHTML = '<i class="fas fa-moon"></i>';
-      }
-    });
-
-    // 4. Mobile Menu Open/Close Toggle View Setup
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', (e) => {
-        if (!link.hasAttribute('onclick')) { // Prevent closing menu when clicking inside switcher controls
-          hamburger.classList.remove('active');
-          navLinks.classList.remove('active');
-        }
-      });
-    });
-    // FAQ Accordion Toggle Interaction
-    document.querySelectorAll('.faq-question').forEach(question => {
-      question.addEventListener('click', () => {
-        const currentItem = question.parentElement;
-        const isOpen = currentItem.classList.contains('active');
-        
-        // Close all open FAQ items (Optional: remove this part if you want multiple items open at once)
-        document.querySelectorAll('.faq-item').forEach(item => {
-          item.classList.remove('active');
-        });
-        
-        // Toggle current item
-        if (!isOpen) {
-          currentItem.classList.add('active');
-        }
-      });
-    });
-  </script>
-  <script src="animations.js"></script>
-
+  <!-- APPLICATION SCRIPTS -->
+  <script type="module" src="js/main.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>

@@ -2,34 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://haclima.am/</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://hayclima.am/</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="hy" href="https://haclima.am/"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/"/>
   </url>
   <url>
-    <loc>https://haclima.am/#services</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://hayclima.am/about</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/about?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/about?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/about"/>
   </url>
   <url>
-    <loc>https://haclima.am/#about</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://hayclima.am/services</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/services?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/services?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/services"/>
   </url>
   <url>
-    <loc>https://haclima.am/#gallery</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://hayclima.am/services/installation</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/services/installation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/services/installation?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/services/installation?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/services/installation"/>
   </url>
   <url>
-    <loc>https://haclima.am/#contact</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://hayclima.am/services/cleaning</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/services/cleaning"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/services/cleaning?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/services/cleaning?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/services/cleaning"/>
+  </url>
+  <url>
+    <loc>https://hayclima.am/services/freon</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/services/freon"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/services/freon?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/services/freon?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/services/freon"/>
+  </url>
+  <url>
+    <loc>https://hayclima.am/services/repair</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/services/repair"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/services/repair?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/services/repair?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/services/repair"/>
+  </url>
+  <url>
+    <loc>https://hayclima.am/products</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/products?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/products?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/products"/>
+  </url>
+  <url>
+    <loc>https://hayclima.am/projects</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/projects?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/projects?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/projects"/>
+  </url>
+  <url>
+    <loc>https://hayclima.am/contact</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://hayclima.am/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hayclima.am/contact?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hayclima.am/contact?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hayclima.am/contact"/>
   </url>
 </urlset>
