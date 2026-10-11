@@ -1,0 +1,42 @@
+{
+  "name": "HayClima.am - Օդորակիչների Սպասարկում",
+  "short_name": "HayClima",
+  "description": "Պրոֆեսիոնալ օդորակիչների սպասարկում, վերանորոգում, մաքրում և ֆրեոնի լիցքավորում Երևանում։ Professional air conditioner service in Yerevan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/public/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/public/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["home", "business", "utilities"],
+  "lang": "hy",
+  "dir": "ltr"
+}
