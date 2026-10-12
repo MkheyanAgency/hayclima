@@ -201,22 +201,6 @@ export const translations = {
     copyright: "© 2026 HayClima.am — Բոլոր իրավունքները պաշտպանված են։",
     agency_credit: "Designed & Developed by",
 
-    // AI Assistant
-    chat_btn_label: "AI Խորհրդատու",
-    chat_title: "HayClima AI Կլիմայական Օգնական",
-    chat_status: "Առցանց · 24/7 Ինժեներական Աջակցություն",
-    chat_welcome: "Ողջու՜յն: Ես HayClima.am-ի արհեստական բանականության օգնականն եմ: Կարող եմ Ձեզ օգնել ընտրել օդորակիչ, հաշվարկել հզորությունը, ներկայացնել տեղադրման, մաքրման կամ ֆրեոնի լիցքավորման մանրամասները և օգնել կանչել վարպետին Երևանում:",
-    chat_suggested_title: "Հաճախ տրվող հարցեր",
-    chat_suggest_1: "Ի՞նչ արժե օդորակիչի քիմիական մաքրումը:",
-    chat_suggest_2: "Ինչպե՞ս ընտրել օդորակիչ 25-35 մ² տարածքի համար:",
-    chat_suggest_3: "Ինչքա՞ն ժամանակում է մոտենում վարպետը և ի՞նչ երաշխիք է տրվում:",
-    chat_suggest_4: "Ի՞նչ ֆրեոններով եք աշխատում (R32, R410A):",
-    chat_input_placeholder: "Գրեք Ձեր հարցը կամ նկարագրեք խնդիրը...",
-    chat_call_human: "Զանգել Ինժեներին (+374 41 790679)",
-    chat_whatsapp: "Գրել WhatsApp",
-    chat_reset: "Մաքրել",
-    chat_typing: "HayClima AI-ն պատասխանում է...",
-    chat_disclaimer: "Պատասխանները հիմնված են HayClima-ի պաշտոնական տվյալների վրա:",
     prod_inquire_modal_title: "Սարքավորման Պատվեր / Խորհրդատվություն",
     prod_include_installation: "Ներառել պրոֆեսիոնալ տեղադրում (+1 տարի երաշխիք)"
   },
@@ -418,22 +402,6 @@ export const translations = {
     copyright: "© 2026 HayClima.am — All Rights Reserved.",
     agency_credit: "Designed & Developed by",
 
-    // AI Assistant
-    chat_btn_label: "AI Assistant",
-    chat_title: "HayClima AI Climate Assistant",
-    chat_status: "Online · 24/7 Engineering Support",
-    chat_welcome: "Hello! I am HayClima.am's AI engineering assistant. I can help you select an air conditioner, calculate cooling capacity, explain chemical cleaning or mounting details, and arrange a technician in Yerevan.",
-    chat_suggested_title: "Suggested questions",
-    chat_suggest_1: "How much does chemical cleaning cost?",
-    chat_suggest_2: "How to choose an AC for 25-35 sq.m?",
-    chat_suggest_3: "How fast does the technician arrive & what is the warranty?",
-    chat_suggest_4: "Which refrigerants do you use (R32, R410A)?",
-    chat_input_placeholder: "Type your question or describe your issue...",
-    chat_call_human: "Call Engineer (+374 41 790679)",
-    chat_whatsapp: "WhatsApp Chat",
-    chat_reset: "Clear",
-    chat_typing: "HayClima AI is typing...",
-    chat_disclaimer: "Answers are grounded strictly in verified HayClima facts.",
     prod_inquire_modal_title: "Equipment Inquiry & Consultation",
     prod_include_installation: "Include professional installation (+1 year warranty)"
   },
@@ -635,22 +603,6 @@ export const translations = {
     copyright: "© 2026 HayClima.am — Все права защищены.",
     agency_credit: "Designed & Developed by",
 
-    // AI Assistant
-    chat_btn_label: "AI Ассистент",
-    chat_title: "HayClima AI Климатический Ассистент",
-    chat_status: "Онлайн · 24/7 Инженерная Поддержка",
-    chat_welcome: "Здравствуйте! Я AI-ассистент компании HayClima.am. Помогу выбрать кондиционер, рассчитать необходимую мощность в BTU, рассказать о стоимости и технологии монтажа, глубокой чистки или заправки фреоном и вызвать мастера по Еревану.",
-    chat_suggested_title: "Частые вопросы",
-    chat_suggest_1: "Сколько стоит химическая чистка кондиционера?",
-    chat_suggest_2: "Какой кондиционер выбрать для комнаты 25-35 кв.м?",
-    chat_suggest_3: "Как быстро приезжает мастер и какая гарантия?",
-    chat_suggest_4: "Какими фреонами вы заправляете (R32, R410A)?",
-    chat_input_placeholder: "Напишите ваш вопрос или опишите проблему...",
-    chat_call_human: "Позвонить Мастеру (+374 41 790679)",
-    chat_whatsapp: "Чат в WhatsApp",
-    chat_reset: "Очистить",
-    chat_typing: "HayClima AI печатает...",
-    chat_disclaimer: "Ответы основаны на официальных инженерных данных HayClima.",
     prod_inquire_modal_title: "Заказ Оборудования / Консультация",
     prod_include_installation: "Включить профессиональный монтаж (+1 год гарантия)"
   }

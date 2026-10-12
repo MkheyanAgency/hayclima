@@ -18,10 +18,6 @@ class HayClimaApp {
     // Default no-op for pages without calculator; overridden dynamically if calculator exists
   }
 
-  updateChatLanguage(lang) {
-    // Default no-op; overridden dynamically when AI assistant widget is initialized
-  }
-
   init() {
     // 1. Initialize Theme
     this.applyTheme(this.currentTheme);
@@ -37,7 +33,6 @@ class HayClimaApp {
     this.setupContactForm();
     this.setupLightbox();
     this.setupProductInquiryModal();
-    this.setupAiAssistant();
 
     // 4. Language Engine
     this.applyLanguage(this.currentLang);
@@ -100,10 +95,7 @@ class HayClimaApp {
       this.updateCalculatorValues();
     }
 
-    // Safely update AI assistant language texts if initialized
-    if (typeof this.updateChatLanguage === 'function') {
-      this.updateChatLanguage(lang);
-    }
+
 
     // Refresh theme toggle label according to language
     this.applyTheme(this.currentTheme);
@@ -660,253 +652,6 @@ class HayClimaApp {
     });
   }
 
-  /* ==========================================================================
-     AI CUSTOMER ASSISTANT (CHAT CLIENT)
-     Full-featured, responsive, accessible, grounded AI advisor
-     ========================================================================== */
-  setupAiAssistant() {
-    // 1. Inject Floating Trigger Button
-    let trigger = document.querySelector('.chat-widget-trigger');
-    if (!trigger) {
-      trigger = document.createElement('button');
-      trigger.className = 'chat-widget-trigger';
-      trigger.setAttribute('aria-label', 'Open AI Climate Assistant');
-      trigger.innerHTML = `
-        <span class="chat-trigger-icon">
-          <i class="fas fa-robot"></i>
-          <span class="chat-pulse-dot"></span>
-        </span>
-        <span class="chat-trigger-text" data-i18n="chat_btn_label">AI Խորհրդատու</span>
-      `;
-      document.body.appendChild(trigger);
-    }
-
-    // 2. Inject Floating Chat Window
-    let windowEl = document.querySelector('.chat-window');
-    if (!windowEl) {
-      windowEl = document.createElement('div');
-      windowEl.className = 'chat-window';
-      windowEl.setAttribute('role', 'dialog');
-      windowEl.setAttribute('aria-label', 'HayClima AI Chat');
-      windowEl.innerHTML = `
-        <div class="chat-header">
-          <div class="chat-header-info">
-            <div class="chat-avatar"><i class="fas fa-snowflake"></i></div>
-            <div>
-              <div class="chat-header-title" data-i18n="chat_title">HayClima AI Կլիմայական Օգնական</div>
-              <div class="chat-header-status" data-i18n="chat_status">Առցանց · 24/7 Ինժեներական Աջակցություն</div>
-            </div>
-          </div>
-          <div class="chat-header-controls">
-            <button type="button" class="chat-control-btn btn-chat-clear" title="Մաքրել" aria-label="Clear chat">
-              <i class="fas fa-trash-alt"></i>
-            </button>
-            <button type="button" class="chat-control-btn btn-chat-close" title="Փակել" aria-label="Close chat">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="chat-messages" id="chat-stream">
-          <!-- Initial Welcome Message -->
-          <div class="chat-bubble bot">
-            <p id="chat-welcome-text" data-i18n="chat_welcome"></p>
-            <div class="chat-suggestions-box">
-              <div class="chat-suggestions-title" data-i18n="chat_suggested_title">Հաճախ տրվող հարցեր</div>
-              <div class="chat-suggestions-list" id="chat-chips-container">
-                <button type="button" class="chat-chip" data-q="suggest_1" data-i18n="chat_suggest_1"></button>
-                <button type="button" class="chat-chip" data-q="suggest_2" data-i18n="chat_suggest_2"></button>
-                <button type="button" class="chat-chip" data-q="suggest_3" data-i18n="chat_suggest_3"></button>
-                <button type="button" class="chat-chip" data-q="suggest_4" data-i18n="chat_suggest_4"></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="chat-input-bar">
-          <form class="chat-form" id="ai-chat-form">
-            <input type="text" id="ai-chat-input" class="chat-input" placeholder="Գրեք Ձեր հարցը..." data-i18n-placeholder="chat_input_placeholder" autocomplete="off" />
-            <button type="submit" class="chat-submit-btn" aria-label="Send message">
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-          <div class="chat-disclaimer" data-i18n="chat_disclaimer">
-            Պատասխանները հիմնված են HayClima-ի պաշտոնական տվյալների վրա:
-          </div>
-        </div>
-      `;
-      document.body.appendChild(windowEl);
-    }
-
-    const streamEl = windowEl.querySelector('#chat-stream');
-    const inputEl = windowEl.querySelector('#ai-chat-input');
-    const formEl = windowEl.querySelector('#ai-chat-form');
-    const closeBtn = windowEl.querySelector('.btn-chat-close');
-    const clearBtn = windowEl.querySelector('.btn-chat-clear');
-
-    // Conversation history stored in session
-    this.chatHistory = [];
-    try {
-      const saved = sessionStorage.getItem('hayclima_chat_history');
-      if (saved) {
-        this.chatHistory = JSON.parse(saved);
-      }
-    } catch (_) {}
-
-    // Toggle Chat Window
-    trigger.addEventListener('click', () => {
-      const isOpen = windowEl.classList.contains('active');
-      windowEl.classList.toggle('active', !isOpen);
-      if (!isOpen) {
-        setTimeout(() => inputEl.focus(), 150);
-      }
-    });
-
-    closeBtn.addEventListener('click', () => {
-      windowEl.classList.remove('active');
-    });
-
-    // Clear Chat
-    clearBtn.addEventListener('click', () => {
-      this.chatHistory = [];
-      sessionStorage.removeItem('hayclima_chat_history');
-      const botWelcome = streamEl.querySelector('.chat-bubble.bot');
-      streamEl.innerHTML = '';
-      if (botWelcome) streamEl.appendChild(botWelcome);
-    });
-
-    // Form submission
-    const handleSend = async (userText) => {
-      const msg = (userText || inputEl.value || '').trim();
-      if (!msg) return;
-
-      inputEl.value = '';
-
-      // Append User Bubble
-      const userBubble = document.createElement('div');
-      userBubble.className = 'chat-bubble user';
-      userBubble.textContent = msg;
-      streamEl.appendChild(userBubble);
-
-      // Typing Indicator
-      const typingEl = document.createElement('div');
-      typingEl.className = 'chat-typing-dots';
-      typingEl.innerHTML = `
-        <span class="chat-typing-dot"></span>
-        <span class="chat-typing-dot"></span>
-        <span class="chat-typing-dot"></span>
-      `;
-      streamEl.appendChild(typingEl);
-      streamEl.scrollTop = streamEl.scrollHeight;
-
-      // Track history
-      this.chatHistory.push({ role: 'user', text: msg });
-
-      try {
-        const response = await fetch('/api/chat', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: msg,
-            language: this.currentLang,
-            history: this.chatHistory.slice(-4)
-          })
-        });
-
-        const data = await response.json();
-        typingEl.remove();
-
-        const botReply = (data && data.reply) 
-          ? data.reply 
-          : "Մեր ինժեներները պատրաստ են Ձեզ օգնել: Խնդրում ենք զանգահարել +374 41 790679:";
-
-        this.chatHistory.push({ role: 'model', text: botReply });
-        sessionStorage.setItem('hayclima_chat_history', JSON.stringify(this.chatHistory.slice(-8)));
-
-        // Append Bot Bubble with formatted linebreaks & bold text
-        const botBubble = document.createElement('div');
-        botBubble.className = 'chat-bubble bot';
-
-        // Format basic markdown (line breaks, bold, bullet points)
-        const formattedHtml = botReply
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/\n\n/g, '</p><p>')
-          .replace(/\n/g, '<br/>');
-
-        botBubble.innerHTML = `
-          <p>${formattedHtml}</p>
-          <div class="chat-actions-row">
-            <a href="tel:+37441790679" class="chat-action-btn primary">
-              <i class="fas fa-phone-alt"></i> +374 41 790679
-            </a>
-            <a href="https://wa.me/37441790679" target="_blank" class="chat-action-btn">
-              <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp
-            </a>
-          </div>
-        `;
-        streamEl.appendChild(botBubble);
-        streamEl.scrollTop = streamEl.scrollHeight;
-      } catch (err) {
-        typingEl.remove();
-        const errBubble = document.createElement('div');
-        errBubble.className = 'chat-bubble bot';
-        errBubble.innerHTML = `
-          <p>Կապի խնդիր: Կարող եք անմիջապես զանգահարել մեր ինժեներին:</p>
-          <div class="chat-actions-row">
-            <a href="tel:+37441790679" class="chat-action-btn primary"><i class="fas fa-phone-alt"></i> +374 41 790679</a>
-          </div>
-        `;
-        streamEl.appendChild(errBubble);
-        streamEl.scrollTop = streamEl.scrollHeight;
-      }
-    };
-
-    formEl.addEventListener('submit', (e) => {
-      e.preventDefault();
-      handleSend();
-    });
-
-    // Suggested Question Chips Click
-    windowEl.addEventListener('click', (e) => {
-      const chip = e.target.closest('.chat-chip');
-      if (chip) {
-        const questionText = chip.textContent.trim();
-        handleSend(questionText);
-      }
-    });
-
-    // Language Sync method
-    this.updateChatLanguage = (lang) => {
-      const dict = translations[lang] || translations.hy;
-      const welcomeEl = windowEl.querySelector('#chat-welcome-text');
-      if (welcomeEl) welcomeEl.textContent = dict.chat_welcome || '';
-
-      const titleEl = windowEl.querySelector('.chat-header-title');
-      if (titleEl && dict.chat_title) titleEl.textContent = dict.chat_title;
-
-      const statusEl = windowEl.querySelector('.chat-header-status');
-      if (statusEl && dict.chat_status) statusEl.textContent = dict.chat_status;
-
-      const triggerTextEl = trigger.querySelector('.chat-trigger-text');
-      if (triggerTextEl && dict.chat_btn_label) triggerTextEl.textContent = dict.chat_btn_label;
-
-      const suggTitleEl = windowEl.querySelector('.chat-suggestions-title');
-      if (suggTitleEl && dict.chat_suggested_title) suggTitleEl.textContent = dict.chat_suggested_title;
-
-      const disclaimerEl = windowEl.querySelector('.chat-disclaimer');
-      if (disclaimerEl && dict.chat_disclaimer) disclaimerEl.textContent = dict.chat_disclaimer;
-
-      const chips = windowEl.querySelectorAll('.chat-chip');
-      chips.forEach((c, idx) => {
-        const key = `chat_suggest_${idx + 1}`;
-        if (dict[key]) c.textContent = dict[key];
-      });
-
-      if (inputEl) inputEl.setAttribute('placeholder', dict.chat_input_placeholder || 'Type message...');
-    };
   }
 }
 

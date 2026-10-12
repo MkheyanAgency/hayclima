@@ -154,23 +154,6 @@ try {
     assert(res.status === 200, `Route ${route} returned HTTP 200`);
   }
 
-  // Test Chat API
-  const chatRes = await makeRequest('/api/chat', 'POST', {
-    message: 'Ի՞նչ արժե օդորակիչի մաքրումը',
-    language: 'hy'
-  });
-  assert(chatRes.status === 200, '/api/chat returns HTTP 200');
-  const chatJson = JSON.parse(chatRes.body);
-  assert(chatJson.success === true && chatJson.reply && chatJson.reply.includes('15,000'), '/api/chat returns accurate grounded HayClima pricing for cleaning');
-
-  // Test Russian Chat
-  const chatRuRes = await makeRequest('/api/chat', 'POST', {
-    message: 'Сколько стоит заправка фреоном?',
-    language: 'ru'
-  });
-  const chatRuJson = JSON.parse(chatRuRes.body);
-  assert(chatRuJson.success === true && chatRuJson.reply && chatRuJson.reply.includes('12,000'), '/api/chat returns accurate Russian freon response');
-
   // Test Contact API
   const contactRes = await makeRequest('/api/contact', 'POST', {
     name: 'Test Customer',
