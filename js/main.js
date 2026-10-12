@@ -703,8 +703,6 @@ class HayClimaApp {
       });
     });
   }
-
-  }
 }
 
 // Instantiate on DOMContentLoaded
