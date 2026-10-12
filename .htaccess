@@ -1,0 +1,47 @@
+# Apache configuration for HayClima.am
+# Handles clean routing and multilingual prefixes (/am/, /ru/, /en/)
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Security & MIME Types
+  AddDefaultCharset UTF-8
+
+  # Route language home pages to index.html
+  RewriteRule ^(am|ru|en)/?$ index.html [L,QSA]
+
+  # Route language subpages to corresponding HTML files
+  # Example: /am/about/ or /am/about -> about.html
+  RewriteRule ^(am|ru|en)/about/?$ about.html [L,QSA]
+  RewriteRule ^(am|ru|en)/services/?$ services.html [L,QSA]
+  RewriteRule ^(am|ru|en)/services/installation/?$ service-installation.html [L,QSA]
+  RewriteRule ^(am|ru|en)/services/cleaning/?$ service-cleaning.html [L,QSA]
+  RewriteRule ^(am|ru|en)/services/freon/?$ service-freon.html [L,QSA]
+  RewriteRule ^(am|ru|en)/services/repair/?$ service-repair.html [L,QSA]
+  RewriteRule ^(am|ru|en)/service-installation/?$ service-installation.html [L,QSA]
+  RewriteRule ^(am|ru|en)/service-cleaning/?$ service-cleaning.html [L,QSA]
+  RewriteRule ^(am|ru|en)/service-freon/?$ service-freon.html [L,QSA]
+  RewriteRule ^(am|ru|en)/service-repair/?$ service-repair.html [L,QSA]
+  RewriteRule ^(am|ru|en)/products/?$ products.html [L,QSA]
+  RewriteRule ^(am|ru|en)/projects/?$ projects.html [L,QSA]
+  RewriteRule ^(am|ru|en)/contact/?$ contact.html [L,QSA]
+
+  # Root clean URLs
+  RewriteRule ^about/?$ about.html [L,QSA]
+  RewriteRule ^services/?$ services.html [L,QSA]
+  RewriteRule ^services/installation/?$ service-installation.html [L,QSA]
+  RewriteRule ^services/cleaning/?$ service-cleaning.html [L,QSA]
+  RewriteRule ^services/freon/?$ service-freon.html [L,QSA]
+  RewriteRule ^services/repair/?$ service-repair.html [L,QSA]
+  RewriteRule ^service-installation/?$ service-installation.html [L,QSA]
+  RewriteRule ^service-cleaning/?$ service-cleaning.html [L,QSA]
+  RewriteRule ^service-freon/?$ service-freon.html [L,QSA]
+  RewriteRule ^service-repair/?$ service-repair.html [L,QSA]
+  RewriteRule ^products/?$ products.html [L,QSA]
+  RewriteRule ^projects/?$ projects.html [L,QSA]
+  RewriteRule ^contact/?$ contact.html [L,QSA]
+</IfModule>
+
+# Custom Error Pages
+ErrorDocument 404 /404.html

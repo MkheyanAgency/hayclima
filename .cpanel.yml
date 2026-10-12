@@ -3,6 +3,10 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/themkheyan47/public_html/
     - /bin/cp -R public/. $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp *.html $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp manifest.json $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH

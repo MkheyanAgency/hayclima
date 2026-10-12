@@ -8,9 +8,32 @@ import { translations } from './translations.js';
 
 class HayClimaApp {
   constructor() {
-    this.currentLang = localStorage.getItem('preferredLanguage') || 'hy';
+    this.currentLang = this.detectLanguage();
     this.currentTheme = localStorage.getItem('selectedTheme') || 'dark';
     this.init();
+  }
+
+  // Detect language directly from URL path (/am/, /ru/, /en/), fallback to query param or localStorage
+  detectLanguage() {
+    const pathname = window.location.pathname;
+    const match = pathname.match(/^\/(am|ru|en)(\/|$)/i);
+    if (match) {
+      const pathLang = match[1].toLowerCase();
+      // 'am' path corresponds to 'hy' (Armenian) translation dictionary
+      return pathLang === 'am' ? 'hy' : pathLang;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get('lang');
+    if (langParam) {
+      const lowerParam = langParam.toLowerCase();
+      if (lowerParam === 'am' || lowerParam === 'hy') return 'hy';
+      if (lowerParam === 'ru') return 'ru';
+      if (lowerParam === 'en') return 'en';
+    }
+
+    // Default to 'hy' without forcing on multilingual paths
+    return 'hy';
   }
 
   // Guaranteed lifecycle methods on class prototype to prevent any TypeError
@@ -75,12 +98,13 @@ class HayClimaApp {
       }
     });
 
-    // Update active class on all switchers
+    // Update active class on all switchers (handles both 'hy' and 'am' attribute matches)
     document.querySelectorAll('.language-switcher').forEach(switcher => {
       const buttons = switcher.querySelectorAll('.lang-btn');
       buttons.forEach(btn => {
         const btnLang = btn.getAttribute('data-lang');
-        if (btnLang === lang) {
+        const isMatch = (btnLang === lang) || (lang === 'hy' && btnLang === 'am');
+        if (isMatch) {
           btn.classList.add('active');
           btn.setAttribute('aria-pressed', 'true');
         } else {
@@ -95,8 +119,6 @@ class HayClimaApp {
       this.updateCalculatorValues();
     }
 
-
-
     // Refresh theme toggle label according to language
     this.applyTheme(this.currentTheme);
   }
@@ -107,7 +129,34 @@ class HayClimaApp {
       if (target && target.hasAttribute('data-lang')) {
         e.preventDefault();
         const selectedLang = target.getAttribute('data-lang');
-        this.applyLanguage(selectedLang);
+        // Standardize language code ('hy' or 'am' -> URL slug 'am', 'ru' -> 'ru', 'en' -> 'en')
+        const urlPrefix = (selectedLang === 'hy' || selectedLang === 'am') ? 'am' : selectedLang;
+        const dictCode = (selectedLang === 'am') ? 'hy' : selectedLang;
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', dictCode);
+
+        // Calculate destination URL on current route
+        const currentPath = window.location.pathname;
+        // Strip any existing language prefix: /am, /ru, /en
+        let pathWithoutLang = currentPath.replace(/^\/(am|ru|en)(\/|$)/i, '/');
+        if (!pathWithoutLang.startsWith('/')) {
+          pathWithoutLang = '/' + pathWithoutLang;
+        }
+
+        let targetUrl;
+        if (pathWithoutLang === '/' || pathWithoutLang === '') {
+          targetUrl = `/${urlPrefix}/`;
+        } else {
+          targetUrl = `/${urlPrefix}${pathWithoutLang}`;
+        }
+
+        // Navigate to the corresponding language URL
+        if (window.location.pathname !== targetUrl) {
+          window.location.href = targetUrl;
+        } else {
+          this.applyLanguage(dictCode);
+        }
       }
     });
   }
@@ -205,13 +254,16 @@ class HayClimaApp {
       }
     }, { passive: true });
 
-    // Set active nav link based on current path with accurate subpage matching
+    // Set active nav link based on current path with accurate subpage and language prefix matching
     const rawPath = window.location.pathname.replace(/\/$/, '') || '/';
-    const currentPath = rawPath.replace(/\.html$/, '');
+    // Remove language prefix if present (/am, /ru, /en)
+    const currentPathWithoutLang = (rawPath.replace(/^\/(am|ru|en)(\/|$)/i, '/') || '/').replace(/\/$/, '') || '/';
+    const currentPath = currentPathWithoutLang.replace(/\.html$/, '');
+
     navLinks.querySelectorAll('a').forEach(link => {
       const href = link.getAttribute('href');
       if (!href) return;
-      const cleanHref = href.replace(/\/$/, '').replace(/\.html$/, '') || '/';
+      const cleanHref = (href.replace(/^\/(am|ru|en)(\/|$)/i, '/') || '/').replace(/\/$/, '').replace(/\.html$/, '') || '/';
       link.classList.remove('active');
       if (
         cleanHref === currentPath ||

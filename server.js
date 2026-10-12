@@ -39,9 +39,25 @@ const pageRoutes = {
   '/contact': 'contact.html'
 };
 
+const supportedLangPrefixes = ['am', 'ru', 'en'];
+
+// Register both root paths and language-prefixed paths (/am, /ru, /en)
 Object.entries(pageRoutes).forEach(([route, file]) => {
+  // Standard routes without prefix
   app.get(route, (req, res) => {
     res.sendFile(path.join(__dirname, file));
+  });
+
+  // Language prefixed routes
+  supportedLangPrefixes.forEach(lang => {
+    const prefixedRoute = route === '/' ? `/${lang}` : `/${lang}${route}`;
+    app.get(prefixedRoute, (req, res) => {
+      res.sendFile(path.join(__dirname, file));
+    });
+    // Support trailing slash variant as well
+    app.get(`${prefixedRoute}/`, (req, res) => {
+      res.sendFile(path.join(__dirname, file));
+    });
   });
 });
 
